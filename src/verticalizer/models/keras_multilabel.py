@@ -10,20 +10,23 @@ def build_model(emb_dim: int, num_labels: int, hidden: int = 512, dropout: float
     x = layers.Dense(hidden//2, activation="relu")(x)
     x = layers.Dropout(dropout)(x)
 
+    # Multi-label classification probabilities
     y_labels = layers.Dense(num_labels, activation="sigmoid", name="labels")(x)
-    y_scores = layers.Dense(num_labels, activation="sigmoid", name="scores")(x)  # scores in 0–1
+
+    # Per-vertical normalized scores (0–1), later mapped to 1–10
+    y_scores = layers.Dense(num_labels, activation="sigmoid", name="scores")(x)
 
     model = keras.Model(inp, [y_labels, y_scores])
     losses = {
         "labels": keras.losses.BinaryCrossentropy(),
         "scores": keras.losses.MeanSquaredError()
     }
-    model.compile(optimizer=keras.optimizers.Adam(1e-3), loss=losses,
+    model.compile(optimizer=keras.optimizers.Adam(1e-3),
+                  loss=losses,
                   metrics={"labels": [keras.metrics.AUC(name="auc"),
                                       keras.metrics.Precision(name="precision"),
                                       keras.metrics.Recall(name="recall")]})
     return model
-
 
 def to_bin_vector(scores_int, bins: int = 10):
     import numpy as np
