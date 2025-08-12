@@ -1,0 +1,47 @@
+{
+  "indiatimes.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "navbharattimes.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "moneycontrol.com": {
+    "IAB3": 10,
+    "IAB13": 10,
+    "IAB12": 10
+  },
+  "naukri.com": {
+    "IAB4": 10,
+    "IAB5": 10,
+    "IAB14": 10
+  },
+  "ndtv.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB1": 10
+  },
+  "gadgets360.com": {
+    "IAB19": 10,
+    "IAB12": 10,
+    "IAB15": 10
+  },
+  "cricbuzz.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "irctc.co.in": {
+    "IAB20": 10,
+    "IAB3": 10,
+    "IAB14": 10
+  },
+  "aajtak.in": {
+    "IAB12": 10,
+    "IAB1": 10,
+    "IAB11": 10
+  }
+}

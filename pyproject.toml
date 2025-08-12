@@ -24,6 +24,7 @@ langchain = "^0.2.14"
 uvloop = { version = "^0.19.0", markers = "sys_platform != 'win32'" }
 orjson = "^3.10.7"
 python-dotenv = "^1.0.1"
+openpyxl = "^3.1.5"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"

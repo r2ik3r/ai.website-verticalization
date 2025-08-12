@@ -1,0 +1,44 @@
+{
+  "weather.com": {
+    "IAB12": 10,
+    "IAB15": 10,
+    "IAB20": 10
+  },
+  "ebay.com": {
+    "IAB22": 10,
+    "IAB9": 10,
+    "IAB19": 10
+  },
+  "cnn.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "realtor.com": {
+    "IAB21": 10,
+    "IAB20": 10,
+    "IAB3": 10
+  },
+  "spotify.com": {
+    "IAB1": 10,
+    "IAB19": 10
+  },
+  "entrepreneur.com": {
+    "IAB3": 10,
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "webmd.com": {
+    "IAB7": 10,
+    "IAB12": 10
+  },
+  "people.com": {
+    "IAB12": 10,
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "healthline.com": {
+    "IAB7": 10,
+    "IAB12": 10
+  }
+}

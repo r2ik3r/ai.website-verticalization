@@ -1,0 +1,10 @@
+website,iab_labels,premiumness_labels,geo,content_text
+weather.com,"[""IAB12"", ""IAB15"", ""IAB20""]","{""IAB12"": 10, ""IAB15"": 10, ""IAB20"": 10}",US,
+ebay.com,"[""IAB22"", ""IAB9"", ""IAB19""]","{""IAB22"": 10, ""IAB9"": 10, ""IAB19"": 10}",US,
+cnn.com,"[""IAB12"", ""IAB11"", ""IAB14""]","{""IAB12"": 10, ""IAB11"": 10, ""IAB14"": 10}",US,
+realtor.com,"[""IAB21"", ""IAB20"", ""IAB3""]","{""IAB21"": 10, ""IAB20"": 10, ""IAB3"": 10}",US,
+spotify.com,"[""IAB1"", ""IAB19""]","{""IAB1"": 10, ""IAB19"": 10}",US,
+entrepreneur.com,"[""IAB3"", ""IAB1"", ""IAB14""]","{""IAB3"": 10, ""IAB1"": 10, ""IAB14"": 10}",US,
+webmd.com,"[""IAB7"", ""IAB12"", ""IAB7""]","{""IAB7"": 10, ""IAB12"": 10}",US,
+people.com,"[""IAB12"", ""IAB1"", ""IAB14""]","{""IAB12"": 10, ""IAB1"": 10, ""IAB14"": 10}",US,
+healthline.com,"[""IAB7"", ""IAB7"", ""IAB12""]","{""IAB7"": 10, ""IAB12"": 10}",US,

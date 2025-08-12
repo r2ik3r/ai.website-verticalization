@@ -14,4 +14,6 @@ def compare_predictions(pred_jsonl, gold_json):
             overlap = gold_iabs & pred_iabs
             print(f"{site}: Gold={gold_iabs}, Pred={pred_iabs}, Overlap={overlap}")
 
-compare_predictions("outputs/us_predictions.jsonl", "data/us_groundtruth.json")
+compare_predictions("./src/verticalizer/outputs/us_predictions.jsonl", "./src/verticalizer/data/us_groundtruth.json")
+
+# PYTHONPATH=./src poetry run python -m src.scripts.compare_predictions

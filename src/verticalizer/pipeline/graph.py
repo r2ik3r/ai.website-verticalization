@@ -1,15 +1,19 @@
-from typing import TypedDict, List, Dict, Any
+from typing import TypedDict
 from langgraph.graph import StateGraph, END
-from ..pipeline.nodes import train_from_labeled, infer as infer_nodes, evaluate as eval_nodes
-from ..pipeline.self_train import self_training_loop
+from ..pipeline.nodes import train_from_labeled, infer as infer_nodes
 from ..models.persistence import save_model, load_model
 from ..models.calibration import ProbCalibrator
-from ..pipeline.io import read_table
+from ..pipeline.io import read_table, write_jsonl
+from ..utils.taxonomy import load_taxonomy
+from ..scripts.excel_to_training_csv import excel_to_training_csv
+
 
 class PipeState(TypedDict):
     action: str
     geo: str
-    input_path: str
+    excel_path: str
+    labeled_csv: str
+    groundtruth_json: str
     model_path: str | None
     calib_path: str | None
     output_path: str | None
@@ -18,54 +22,42 @@ class PipeState(TypedDict):
     unlabeled_path: str | None
     iterations: int
 
+
+def node_convert_excel(state: PipeState) -> PipeState:
+    """Converts Excel to labeled CSV and groundtruth JSON before training."""
+    excel_to_training_csv(state["excel_path"], state["geo"], state["labeled_csv"], state["groundtruth_json"])
+    return state
+
+
 def node_train(state: PipeState) -> PipeState:
-    df = read_table(state["input_path"])
+    df = read_table(state["labeled_csv"])
     bundle = train_from_labeled(df)
     save_model(bundle["model"], state["model_path"])
     bundle["cal"].save(state["calib_path"])
     state["action"] = "done"
     return state
 
-def node_self_train(state: PipeState) -> PipeState:
-    import pandas as pd
-    seed_df = read_table(state["seed_path"])
-    unlabeled_df = read_table(state["unlabeled_path"])
-    model, cal, classes = self_training_loop(seed_df, unlabeled_df, iterations=state["iterations"])
-    save_model(model, state["model_path"])
-    cal.save(state["calib_path"])
-    state["action"] = "done"
-    return state
 
 def node_infer(state: PipeState) -> PipeState:
-    import json, orjson
-    from ..pipeline.io import write_jsonl
-    df = read_table(state["input_path"])
+    df = read_table(state["labeled_csv"])
     model = load_model(state["model_path"])
-    cal = ProbCalibrator.load(state["calib_path"]) if state["calib_path"] else ProbCalibrator()
-    # classes are Tier-1 IAB in order
-    from ..utils.taxonomy import load_taxonomy
+    cal = ProbCalibrator.load(state["calib_path"])
     id2label, _ = load_taxonomy()
     classes = list(id2label.keys())
-    out = infer_nodes(model, cal, classes, df)
+    out = infer_nodes(model, cal, classes, df, topk=26)  # default all Tier-1
     write_jsonl(state["output_path"], out)
     state["action"] = "done"
     return state
 
+
 def build_graph():
-    g = StateGraph(PipeState)
-    g.add_node("train", node_train)
-    g.add_node("self_train", node_self_train)
-    g.add_node("infer", node_infer)
-    def route(state: PipeState):
-        if state["action"] in {"train"}:
-            return "train"
-        if state["action"] in {"self_train"}:
-            return "self_train"
-        if state["action"] in {"infer"}:
-            return "infer"
-        return END
-    g.set_entry_point("train")
-    g.add_conditional_edges("train", lambda s: "infer" if s["action"] == "infer" else END, {"infer": "infer", "end": END})
-    # compile with flexible entry using small wrapper
-    graph = g.compile()
-    return graph
+    workflow = StateGraph(PipeState)
+    workflow.add_node("convert_excel", node_convert_excel)
+    workflow.add_node("train", node_train)
+    workflow.add_node("infer", node_infer)
+
+    workflow.set_entry_point("convert_excel")
+    workflow.add_edge("convert_excel", "train")
+    workflow.add_edge("train", "infer")
+    workflow.add_edge("infer", END)
+    return workflow.compile()
