@@ -91,8 +91,7 @@ def latest_text_for_site_batch(sites: List[str]) -> Dict[str, Optional[str]]:
         """)
         rows = conn.execute(q, dict(sites=sites)).all()
         out: Dict[str, Optional[str]] = {}
-        for row in rows:
-            site, text_excerpt = row, row
+        for site, text_excerpt in rows:
             out[site] = text_excerpt
         for s in sites:
             out.setdefault(s, None)

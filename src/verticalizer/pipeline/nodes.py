@@ -108,10 +108,11 @@ def train_from_labeled(df: pd.DataFrame) -> Dict[str, Any]:
     cal = ProbCalibrator()
     if np.sum(y_labels) > 5:  # only if enough positive labels
         pred_out = model.predict(X, verbose=0)
-        raw_probs = pred_out if isinstance(pred_out, (list, tuple)) else pred_out
-        if isinstance(raw_probs, (list, tuple)):
-            raw_probs = raw_probs[0]  # labels head
-        cal.fit(raw_probs, y_labels)
+        if isinstance(pred_out, (list, tuple)):
+            pred_labels = pred_out[0]
+        else:
+            pred_labels = pred_out
+        cal.fit(pred_labels, y_labels)
 
     return {"model": model, "cal": cal, "classes": classes}
 
