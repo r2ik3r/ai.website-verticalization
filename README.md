@@ -1,4 +1,4 @@
-# 📊 IAB Verticalizer
+# 📊 Website Verticalizer
 Production-grade classification system for website content into IAB categories with geo-specific Premiumness Scores
 
 See also:
@@ -9,7 +9,7 @@ See also:
 
 ## 📌 Overview
 
-IAB Verticalizer is a production-ready ML system for:
+Website Verticalizer is a production-ready ML system for:
 - Classifying websites into IAB categories (Tier‑1; optionally Tier‑2).
 - Assigning geo-specific Premiumness Scores (1–10) per category.
 - Operating on labeled datasets, unlabeled datasets (via crawling, embedding, inference), or both in hybrid loops.

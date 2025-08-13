@@ -1,4 +1,4 @@
-# Contributing to IAB Verticalizer
+# Contributing to Website Verticalizer
 
 Thank you for your interest in contributing!
 We welcome bug reports, fixes, features, documentation, and tests.
