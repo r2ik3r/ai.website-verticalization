@@ -1,3 +1,4 @@
+# src/verticalizer/cli.py
 import argparse
 import os
 import json
@@ -7,33 +8,33 @@ from .pipeline.io import read_table, write_jsonl
 from .pipeline.nodes import train_from_labeled, infer as infer_nodes, evaluate as eval_nodes
 from .models.persistence import save_model, load_model
 from .models.calibration import ProbCalibrator
-from .scripts.excel_to_training_csv import excel_to_training_csv
+
+try:
+    from .scripts.excel_to_training_csv import excel_to_training_csv
+except Exception:
+    excel_to_training_csv = None
 
 log = get_logger("verticalizer")
-
 
 def _ensure_dir(path: str):
     d = os.path.dirname(path)
     if d and not os.path.exists(d):
         os.makedirs(d, exist_ok=True)
 
-
-def cmd_train(geo: str, in_path: str, model_out: str, calib_out: str, report: str):
+def cmd_train(geo, in_path, model_out, calib_out, report):
+    log.info(f"[PIPE] Training model for geo={geo}")
     df = read_table(in_path)
     bundle = train_from_labeled(df)
-    _ensure_dir(model_out)
-    _ensure_dir(calib_out)
-    _ensure_dir(report)
+    _ensure_dir(model_out); _ensure_dir(calib_out); _ensure_dir(report)
     save_model(bundle["model"], model_out)
     bundle["cal"].save(calib_out)
-    # quick validation on same set (best to use a proper val split in practice)
-    metrics = eval_nodes(bundle["model"], bundle["cal"], list(bundle["cal"].cals.keys()) or [], df)
-    with open(report, "w", encoding="utf-8") as f:
+    metrics = eval_nodes(bundle["model"], bundle["cal"], bundle["classes"], df)
+    with open(report, "w") as f:
         json.dump(metrics, f, indent=2)
-    log.info("Training completed")
+    log.info(f"[PIPE] Training complete -> model={model_out}")
 
-
-def cmd_infer(geo: str, in_path: str, model: str, calib: str, out_path: str, topk: int):
+def cmd_infer(geo, in_path, model, calib, out_path, topk):
+    log.info(f"[PIPE] Running inference geo={geo}, topk={topk}")
     df = read_table(in_path)
     model_obj = load_model(model)
     cal = ProbCalibrator.load(calib) if calib and os.path.exists(calib) else ProbCalibrator()
@@ -43,10 +44,10 @@ def cmd_infer(geo: str, in_path: str, model: str, calib: str, out_path: str, top
     out = infer_nodes(model_obj, cal, classes, df, topk=topk)
     _ensure_dir(out_path)
     write_jsonl(out_path, out)
-    log.info("Inference completed")
-
+    log.info(f"[PIPE] Inference complete -> {out_path}")
 
 def cmd_validate(geo: str, in_path: str, model: str, calib: str, report: str):
+    log.info(f"[CLI] VALIDATE geo={geo} in={in_path}")
     df = read_table(in_path)
     model_obj = load_model(model)
     cal = ProbCalibrator.load(calib) if calib and os.path.exists(calib) else ProbCalibrator()
@@ -57,28 +58,7 @@ def cmd_validate(geo: str, in_path: str, model: str, calib: str, report: str):
     _ensure_dir(report)
     with open(report, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2)
-    log.info("Validation report written")
-
-
-def cmd_self_train(geo: str, seed_path: str, unlabeled_path: str, iterations: int, model_out: str, calib_out: str, report: str):
-    from .pipeline.self_train import self_training_loop
-    seed_df = read_table(seed_path)
-    unlabeled_df = read_table(unlabeled_path)
-    model, cal, classes = self_training_loop(seed_df, unlabeled_df, iterations=iterations)
-    _ensure_dir(model_out)
-    _ensure_dir(calib_out)
-    _ensure_dir(report)
-    save_model(model, model_out)
-    cal.save(calib_out)
-    # Optional evaluation on seed set
-    try:
-        metrics = eval_nodes(model, cal, classes, seed_df)
-    except Exception:
-        metrics = {"note": "No labels available for seed evaluation"}
-    with open(report, "w", encoding="utf-8") as f:
-        json.dump(metrics, f, indent=2)
-    log.info("Self-training completed")
-
+    log.info(f"[CLI] VALIDATE complete -> report={report}")
 
 def compare_predictions(pred_jsonl: str, gold_json: str, out_report: str | None = None):
     import orjson
@@ -89,7 +69,6 @@ def compare_predictions(pred_jsonl: str, gold_json: str, out_report: str | None 
             if not line.strip():
                 continue
             preds.append(orjson.loads(line))
-    # Compute simple overlap metrics
     total = 0
     matched_any = 0
     details = []
@@ -102,11 +81,7 @@ def compare_predictions(pred_jsonl: str, gold_json: str, out_report: str | None 
         if overlap:
             matched_any += 1
         details.append({"website": site, "gold": sorted(gold_iabs), "pred": sorted(pred_iabs), "overlap": overlap})
-    summary = {
-        "sites": total,
-        "matched_any": matched_any,
-        "match_rate": round(matched_any / total, 4) if total else 0.0,
-    }
+    summary = {"sites": total, "matched_any": matched_any, "match_rate": round(matched_any / total, 4) if total else 0.0}
     report = {"summary": summary, "details": details}
     if out_report:
         _ensure_dir(out_report)
@@ -114,22 +89,19 @@ def compare_predictions(pred_jsonl: str, gold_json: str, out_report: str | None 
             json.dump(report, f, indent=2)
     return report
 
-
-def cmd_run_pipeline(geo: str, excel_path: str, labeled_csv: str, groundtruth_json: str,
-                     model_path: str, calib_path: str, output_path: str, report_path: str, topk: int = 26):
+def cmd_run_pipeline(geo, excel_path, labeled_csv, groundtruth_json, model_path, calib_path, out_path, report_path, topk):
     if excel_to_training_csv is None:
-        raise RuntimeError("scripts.excel_to_training_csv.excel_to_training_csv not available. Ensure PYTHONPATH=./src and the script exists.")
-    # 1) Convert Excel → labeled CSV + ground truth
+        raise RuntimeError("Excel converter not found in scripts.")
+    log.info("[PIPE] Step 1: Converting Excel to CSV/JSON...")
     excel_to_training_csv(excel_path, geo, labeled_csv, groundtruth_json)
-    # 2) Train
+    log.info("[PIPE] Step 2: Training...")
     cmd_train(geo, labeled_csv, model_path, calib_path, report_path)
-    # 3) Infer
-    cmd_infer(geo, labeled_csv, model_path, calib_path, output_path, topk=topk)
-    # 4) Compare predictions vs ground truth
-    qa_report_path = os.path.splitext(report_path)[0] + ".compare.json"
-    cmp_report = compare_predictions(output_path, groundtruth_json, qa_report_path)
-    log.info(f"Compare report: {cmp_report['summary']}")
-
+    log.info("[PIPE] Step 3: Inference...")
+    cmd_infer(geo, labeled_csv, model_path, calib_path, out_path, topk)
+    log.info("[PIPE] Step 4: Compare predictions with ground truth...")
+    compare_path = os.path.splitext(report_path)[0] + ".compare.json"
+    cmp = compare_predictions(out_path, groundtruth_json, compare_path)
+    log.info(f"[PIPE] Compare summary: {cmp['summary']}")
 
 def app():
     parser = argparse.ArgumentParser(prog="verticalizer")
@@ -166,7 +138,6 @@ def app():
     p_self.add_argument("--calib-out", required=True)
     p_self.add_argument("--report", required=True)
 
-    # New integrated pipeline command
     p_pipe = sub.add_parser("run-pipeline")
     p_pipe.add_argument("--geo", required=True)
     p_pipe.add_argument("--excel-path", required=True)
@@ -188,15 +159,25 @@ def app():
     elif args.cmd == "validate":
         cmd_validate(args.geo, args.in_path, args.model, args.calib, args.report)
     elif args.cmd == "self-train":
-        cmd_self_train(args.geo, args.seed, args.unlabeled, args.iterations, args.model_out, args.calib_out, args.report)
+        from .pipeline.self_train import self_training_loop
+        log.info(f"[CLI] SELF-TRAIN geo={args.geo}")
+        seed_df = read_table(args.seed)
+        unlabeled_df = read_table(args.unlabeled)
+        model, cal, classes = self_training_loop(seed_df, unlabeled_df, iterations=args.iterations)
+        _ensure_dir(args.model_out); _ensure_dir(args.calib_out); _ensure_dir(args.report)
+        save_model(model, args.model_out); cal.save(args.calib_out)
+        try:
+            metrics = eval_nodes(model, cal, classes, seed_df)
+        except Exception:
+            metrics = {"note": "No labels available for seed evaluation"}
+        with open(args.report, "w", encoding="utf-8") as f:
+            json.dump(metrics, f, indent=2)
+        log.info("[CLI] SELF-TRAIN complete")
     elif args.cmd == "run-pipeline":
         cmd_run_pipeline(args.geo, args.excel_path, args.labeled_csv, args.groundtruth_json,
                          args.model_path, args.calib_path, args.output_path, args.report_path, args.topk)
     else:
         parser.error("Unknown command")
 
-
 if __name__ == "__main__":
     app()
-
-

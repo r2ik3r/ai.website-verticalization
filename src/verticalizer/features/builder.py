@@ -1,86 +1,74 @@
 # src/verticalizer/features/builder.py
-from typing import List
-import pandas as pd
-import numpy as np
 
+import pandas as pd
+import logging
+from typing import List
 from ..crawl.fetcher import fetch_text
 from ..embeddings.gemini_client import GeminiEmbedder
 
+# Use tqdm for progress
+try:
+    from tqdm.rich import tqdm
+except ImportError:
+    from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
 
 def _ensure_content_text(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Ensure df has a content_text column.
-    If missing or empty, crawl the website homepage to extract readable text.
+    Ensure 'content_text' column exists and populated.
+    Crawl missing ones with a visible progress bar.
     """
     df = df.copy()
     if "content_text" not in df.columns:
         df["content_text"] = ""
 
     texts: List[str] = []
-    for _, row in df.iterrows():
+    iterator = tqdm(df.iterrows(), total=len(df), desc="Crawling sites", unit="site")
+    for _, row in iterator:
         txt = row.get("content_text")
         if isinstance(txt, str) and txt.strip():
             texts.append(txt)
-            continue
-        site = str(row.get("website", "")).strip()
-        if not site:
-            texts.append("")
-            continue
-        try:
-            crawled = fetch_text(site)
-            texts.append(crawled or "")
-        except Exception:
-            texts.append("")
+        else:
+            site = str(row.get("website", "")).strip()
+            if not site:
+                texts.append("")
+                continue
+            try:
+                crawled = fetch_text(site)
+                texts.append(crawled or "")
+            except Exception as e:
+                logger.warning(f"[crawl_and_embed] Failed to crawl {site}: {e}")
+                texts.append("")
     df["content_text"] = texts
     return df
 
 
-def _embed_texts(texts: List[str]) -> List[List[float]]:
-    """
-    Embed a list of texts using Gemini with local caching.
-    """
-    embedder = GeminiEmbedder()
-    vectors: List[List[float]] = []
-    for t in texts:
-        try:
-            vec = embedder.embed_text(t)
-            vectors.append(vec)
-        except Exception:
-            # If embedding fails, use a zero vector of common dimension (e.g., 768).
-            # This is a safe fallback; downstream model expects fixed-length vectors.
-            vectors.append([0.0] * 768)
-    return vectors
-
-
 def crawl_and_embed(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Public API used by training/inference:
-    - Ensure content_text is present (crawl if missing).
-    - Embed content_text into a fixed-length embedding.
-    - Return df with 'content_text' and 'embedding' columns populated.
+    Pipeline step:
+    1. Crawl + fill content_text (with progress bar)
+    2. Embed content_text using GeminiEmbedder (with progress & cache stats)
     """
     df = _ensure_content_text(df)
-    texts = df["content_text"].fillna("").astype(str).tolist()
-    vectors = _embed_texts(texts)
 
-    # Validate consistent embedding shapes
-    # If any vector is not the same size, pad/truncate to the dominant length.
-    lengths = [len(v) for v in vectors]
-    if not lengths:
-        emb_dim = 768
-        vectors = [[0.0] * emb_dim]
-    else:
-        # Choose the most common length as canonical
-        emb_dim = max(set(lengths), key=lengths.count)
+    logger.info(f"[crawl_and_embed] Embedding {len(df)} documents with Gemini...")
+    embedder = GeminiEmbedder()
+    df = embedder.embed_dataframe_column(df, "content_text", "embedding", show_progress=True)
+
+    # Sanity check: ensure consistent embedding lengths
+    lengths = [len(v) if isinstance(v, list) else 0 for v in df["embedding"]]
+    if len(set(lengths)) != 1:
+        max_len = max(lengths)
+        logger.warning(f"[crawl_and_embed] Inconsistent embedding sizes detected, padding to {max_len}")
         fixed = []
-        for v in vectors:
-            if len(v) == emb_dim:
+        for v in df["embedding"]:
+            if len(v) == max_len:
                 fixed.append(v)
-            elif len(v) > emb_dim:
-                fixed.append(v[:emb_dim])
+            elif len(v) > max_len:
+                fixed.append(v[:max_len])
             else:
-                fixed.append(v + [0.0] * (emb_dim - len(v)))
-        vectors = fixed
+                fixed.append(v + [0.0] * (max_len - len(v)))
+        df["embedding"] = fixed
 
-    df["embedding"] = vectors
     return df

@@ -3,30 +3,40 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 def build_model(emb_dim: int, num_labels: int, hidden: int = 512, dropout: float = 0.3):
+    """
+    Build a multi-label classification + per-vertical score regression model.
+    - labels head: sigmoid(num_labels), trained with BCE
+    - scores head: sigmoid(num_labels), trained with MSE, mapped to 1..10
+    """
     inp = keras.Input(shape=(emb_dim,), name="emb")
     x = layers.Dense(hidden, activation="relu")(inp)
     x = layers.BatchNormalization()(x)
     x = layers.Dropout(dropout)(x)
-    x = layers.Dense(hidden//2, activation="relu")(x)
+    x = layers.Dense(hidden // 2, activation="relu")(x)
     x = layers.Dropout(dropout)(x)
 
-    # Multi-label classification probabilities
     y_labels = layers.Dense(num_labels, activation="sigmoid", name="labels")(x)
-
-    # Per-vertical normalized scores (0–1), later mapped to 1–10
     y_scores = layers.Dense(num_labels, activation="sigmoid", name="scores")(x)
 
     model = keras.Model(inp, [y_labels, y_scores])
-    losses = {
-        "labels": keras.losses.BinaryCrossentropy(),
-        "scores": keras.losses.MeanSquaredError()
-    }
-    model.compile(optimizer=keras.optimizers.Adam(1e-3),
-                  loss=losses,
-                  metrics={"labels": [keras.metrics.AUC(name="auc"),
-                                      keras.metrics.Precision(name="precision"),
-                                      keras.metrics.Recall(name="recall")]})
+    model.compile(
+        optimizer=keras.optimizers.Adam(1e-3),
+        loss={
+            "labels": keras.losses.BinaryCrossentropy(),
+            "scores": keras.losses.MeanSquaredError()
+        },
+        # Prioritise classification so model learns to separate categories before fine-tuning scores
+        loss_weights={"labels": 1.0, "scores": 0.3},
+        metrics={
+            "labels": [
+                keras.metrics.AUC(name="auc"),
+                keras.metrics.Precision(name="precision"),
+                keras.metrics.Recall(name="recall")
+            ]
+        }
+    )
     return model
+
 
 def to_bin_vector(scores_int, bins: int = 10):
     import numpy as np

@@ -40,5 +40,8140 @@
   "healthline.com": {
     "IAB7": 10,
     "IAB12": 10
+  },
+  "autotrader.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "espn.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "washingtonpost.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "forbes.com": {
+    "IAB12": 10,
+    "IAB3": 10,
+    "IAB19": 10
+  },
+  "nytimes.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "cargurus.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "mlb.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB22": 10
+  },
+  "cnet.com": {
+    "IAB22": 10,
+    "IAB19": 10,
+    "IAB12": 10
+  },
+  "cars.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "cbssports.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "foxbusiness.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "tomsguide.com": {
+    "IAB19": 10,
+    "IAB22": 10
+  },
+  "foodnetwork.com": {
+    "IAB8": 10,
+    "IAB1": 10,
+    "IAB3": 10
+  },
+  "cosmopolitan.com": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB7": 10
+  },
+  "billboard.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB22": 10
+  },
+  "nfl.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "wsj.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "bloomberg.com": {
+    "IAB12": 10,
+    "IAB3": 10,
+    "IAB13": 10
+  },
+  "target.com": {
+    "IAB22": 10,
+    "IAB3": 10,
+    "IAB10": 10
+  },
+  "vanityfair.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "investopedia.com": {
+    "IAB13": 10,
+    "IAB3": 10,
+    "IAB12": 10
+  },
+  "time.com": {
+    "IAB12": 10,
+    "IAB14": 10,
+    "IAB11": 10
+  },
+  "npr.org": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "edmunds.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB13": 10
+  },
+  "techcrunch.com": {
+    "IAB19": 10,
+    "IAB15": 10
+  },
+  "fortune.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB3": 10
+  },
+  "foxnews.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "ultimate-guitar.com": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB12": 10
+  },
+  "accuweather.com": {
+    "IAB12": 10,
+    "IAB15": 10,
+    "IAB20": 10
+  },
+  "menshealth.com": {
+    "IAB14": 10,
+    "IAB7": 10,
+    "IAB1": 10
+  },
+  "motorsport.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB2": 10
+  },
+  "nationalpost.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "thegazette.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "ted.com": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB4": 10
+  },
+  "foodisinthehouse.com": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB12": 10
+  },
+  "factinate.com": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB5": 10
+  },
+  "chegg.com": {
+    "IAB4": 10,
+    "IAB1": 10,
+    "IAB5": 10
+  },
+  "wunderground.com": {
+    "IAB12": 10,
+    "IAB15": 10
+  },
+  "w3schools.com": {
+    "IAB19": 10,
+    "IAB4": 10,
+    "IAB3": 10
+  },
+  "myrecipes.com": {
+    "IAB8": 10,
+    "IAB3": 10,
+    "IAB7": 10
+  },
+  "drugs.com": {
+    "IAB7": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "bradsdeals.com": {
+    "IAB22": 10,
+    "IAB3": 10,
+    "IAB9": 10
+  },
+  "horoscope.com": {
+    "IAB14": 10,
+    "IAB1": 10,
+    "IAB22": 10
+  },
+  "comingsoon.net": {
+    "IAB1": 10,
+    "IAB14": 10,
+    "IAB12": 10
+  },
+  "howtopronounce.com": {
+    "IAB5": 10,
+    "IAB1": 10,
+    "IAB4": 10
+  },
+  "scientificamerican.com": {
+    "IAB15": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "dafont.com": {
+    "IAB19": 10,
+    "IAB1": 10,
+    "IAB9": 10
+  },
+  "jdpower.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "cyclingnews.com": {
+    "IAB9": 10,
+    "IAB17": 10,
+    "IAB12": 10
+  },
+  "wccftech.com": {
+    "IAB19": 10,
+    "IAB12": 10,
+    "IAB15": 10
+  },
+  "pagesix.com": {
+    "IAB12": 10,
+    "IAB1": 10,
+    "IAB7": 10
+  },
+  "kiplinger.com": {
+    "IAB13": 10,
+    "IAB3": 10,
+    "IAB12": 10
+  },
+  "pcmag.com": {
+    "IAB19": 10,
+    "IAB22": 10
+  },
+  "t-mobile.com": {
+    "IAB1": 10,
+    "IAB19": 10,
+    "IAB5": 10
+  },
+  "aarp.org": {
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "investigationdiscovery.com": {
+    "IAB1": 10,
+    "IAB11": 10,
+    "IAB9": 10
+  },
+  "cbc.ca": {
+    "IAB12": 10,
+    "IAB14": 10,
+    "IAB11": 10
+  },
+  "nature.com": {
+    "IAB7": 10,
+    "IAB15": 10,
+    "IAB4": 10
+  },
+  "nascar.com": {
+    "IAB17": 10,
+    "IAB2": 10,
+    "IAB12": 10
+  },
+  "delish.com": {
+    "IAB8": 10,
+    "IAB1": 10,
+    "IAB3": 10
+  },
+  "gamerant.com": {
+    "IAB1": 10,
+    "IAB19": 10
+  },
+  "deadline.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "merriam.com": {
+    "IAB1": 10,
+    "IAB5": 10,
+    "IAB4": 10
+  },
+  "buzzfeednews.com": {
+    "IAB12": 10,
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "theglobeandmail.com": {
+    "IAB12": 10,
+    "IAB14": 10,
+    "IAB11": 10
+  },
+  "lanacion.com.ar": {
+    "IAB12": 10,
+    "IAB14": 10,
+    "IAB11": 10
+  },
+  "wtsp.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "statesman.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "mindbodygreen.com": {
+    "IAB14": 10,
+    "IAB7": 10,
+    "IAB5": 10
+  },
+  "wkyc.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB1": 10
+  },
+  "drudgereport.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "whiskeyriff.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "the-sun.com": {
+    "IAB12": 10,
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "ew.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB7": 10
+  },
+  "autooverload.com": {
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "hollywoodreporter.com": {
+    "IAB1": 10,
+    "IAB12": 10,
+    "IAB14": 10
+  },
+  "thegamer.com": {
+    "IAB1": 10,
+    "IAB19": 10
+  },
+  "goal.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "dallasnews.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB17": 10
+  },
+  "barnfinds.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB9": 10
+  },
+  "wfaa.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB1": 10
+  },
+  "13wmaz.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "thepioneerwoman.com": {
+    "IAB8": 10,
+    "IAB1": 10,
+    "IAB14": 10
+  },
+  "thecoli.com": {
+    "IAB1": 10,
+    "IAB12": 10
+  },
+  "dinarguru.com": {
+    "IAB13": 10,
+    "IAB3": 10
+  },
+  "post-gazette.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB14": 10
+  },
+  "therealdeal.com": {
+    "IAB21": 10,
+    "IAB3": 10,
+    "IAB12": 10
+  },
+  "thehulltruth.com": {
+    "IAB9": 10,
+    "IAB2": 10,
+    "IAB3": 10
+  },
+  "wfla.com": {
+    "IAB12": 10,
+    "IAB11": 10,
+    "IAB7": 10
+  },
+  "greencarreports.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "brit.co": {
+    "IAB8": 10,
+    "IAB5": 10,
+    "IAB1": 10
+  },
+  "mlb.tv": {
+    "IAB1": 10
+  },
+  "12up.com": {
+    "IAB1": 10
+  },
+  "baseball-reference.com": {
+    "IAB17": 10,
+    "IAB12": 10,
+    "IAB1": 10
+  },
+  "futbin.com": {
+    "IAB1": 10
+  },
+  "yourdictionary.com": {
+    "IAB1": 10,
+    "IAB5": 10,
+    "IAB4": 10
+  },
+  "tutorialspoint.com": {
+    "IAB19": 10,
+    "IAB15": 10,
+    "IAB5": 10
+  },
+  "triviatoday.com": {
+    "IAB1": 10
+  },
+  "motorbiscuit.com": {
+    "IAB2": 10,
+    "IAB22": 10,
+    "IAB3": 10
+  },
+  "today.com": {
+    "IAB12": 10,
+    "IAB14": 10,
+    "IAB1": 10
+  },
+  "flightradar24.com": {
+    "IAB3": 10,
+    "IAB20": 10,
+    "IAB19": 10
+  },
+  "yahoo.com": {
+    "IAB1": 8,
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "msn.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "dailymail.co.uk": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "aol.com": {
+    "IAB1": 8,
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "dailymotion.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "newsweek.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "nypost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "usatoday.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "sfgate.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "latimes.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "thrillist.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB8": 8
+  },
+  "businessinsider.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "mapquest.com": {
+    "IAB5": 8,
+    "IAB20": 8,
+    "IAB3": 8
+  },
+  "go.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "nbcsports.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "247sports.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB22": 8
+  },
+  "theguardian.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "thehill.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "kohls.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "usnews.com": {
+    "IAB7": 8,
+    "IAB11": 8,
+    "IAB22": 8
+  },
+  "usmagazine.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "allrecipes.com": {
+    "IAB8": 8,
+    "IAB10": 8,
+    "IAB3": 8
+  },
+  "si.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "merriam-webster.com": {
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "bbc.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "reuters.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "nydailynews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "kbb.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "thedailybeast.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "britannica.com": {
+    "IAB5": 8,
+    "IAB14": 8,
+    "IAB1": 8
+  },
+  "myfitnesspal.com": {
+    "IAB7": 8,
+    "IAB8": 8
+  },
+  "techradar.com": {
+    "IAB19": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "express.co.uk": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "cbslocal.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "theverge.com": {
+    "IAB12": 8,
+    "IAB19": 8,
+    "IAB15": 8
+  },
+  "rollingstone.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "pcgamer.com": {
+    "IAB1": 8,
+    "IAB22": 8
+  },
+  "washingtonexaminer.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "dailydot.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "chicagotribune.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "cinemablend.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "buzzfeed.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "xe.com": {
+    "IAB13": 8,
+    "IAB3": 8,
+    "IAB12": 8
+  },
+  "goodhousekeeping.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB22": 8
+  },
+  "politico.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "fool.com": {
+    "IAB3": 8,
+    "IAB13": 8,
+    "IAB12": 8
+  },
+  "speedtest.net": {
+    "IAB19": 8,
+    "IAB3": 8
+  },
+  "caranddriver.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "independent.co.uk": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "nbcnews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "inc.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB5": 8
+  },
+  "tomshardware.com": {
+    "IAB19": 8,
+    "IAB5": 8,
+    "IAB22": 8
+  },
+  "wikihow.com": {
+    "IAB5": 8,
+    "IAB9": 8,
+    "IAB14": 8
+  },
+  "mentalfloss.com": {
+    "IAB1": 8,
+    "IAB5": 8,
+    "IAB14": 8
+  },
+  "sparknotes.com": {
+    "IAB5": 8,
+    "IAB1": 8,
+    "IAB4": 8
+  },
+  "tasteofhome.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "hgtv.com": {
+    "IAB10": 8,
+    "IAB1": 8,
+    "IAB3": 8
+  },
+  "jalopnik.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "miamiherald.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "thekitchn.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB10": 8
+  },
+  "kayak.com": {
+    "IAB20": 8,
+    "IAB3": 8,
+    "IAB22": 8
+  },
+  "realclearpolitics.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "nadaguides.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "livescience.com": {
+    "IAB15": 8,
+    "IAB14": 8,
+    "IAB5": 8
+  },
+  "variety.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "cbsnews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "tvguide.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "nj.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "tripadvisor.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB8": 8
+  },
+  "al.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB17": 8
+  },
+  "bleacherreport.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "sears.com": {
+    "IAB22": 8,
+    "IAB10": 8,
+    "IAB3": 8
+  },
+  "space.com": {
+    "IAB15": 8,
+    "IAB3": 8,
+    "IAB19": 8
+  },
+  "nasdaq.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB13": 8
+  },
+  "autoblog.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "travelchannel.com": {
+    "IAB20": 8,
+    "IAB1": 8,
+    "IAB9": 8
+  },
+  "avclub.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "bhg.com": {
+    "IAB10": 8,
+    "IAB5": 8,
+    "IAB3": 8
+  },
+  "howtogeek.com": {
+    "IAB19": 8,
+    "IAB5": 8
+  },
+  "trulia.com": {
+    "IAB21": 8,
+    "IAB20": 8
+  },
+  "polygon.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "cnbc.com": {
+    "IAB12": 8,
+    "IAB3": 8,
+    "IAB13": 8
+  },
+  "vox.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "marketwatch.com": {
+    "IAB12": 8,
+    "IAB3": 8,
+    "IAB13": 8
+  },
+  "bostonglobe.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "marthastewart.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB10": 8
+  },
+  "travelandleisure.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB11": 8
+  },
+  "nationalreview.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "thespruce.com": {
+    "IAB10": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "engadget.com": {
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "ncaa.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB22": 8
+  },
+  "foodandwine.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "history.com": {
+    "IAB5": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "playbuzz.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "iheart.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "startribune.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "dailywire.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "thestreet.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB13": 8
+  },
+  "vulture.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "snopes.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "arstechnica.com": {
+    "IAB12": 8,
+    "IAB15": 8,
+    "IAB19": 8
+  },
+  "instyle.com": {
+    "IAB7": 8,
+    "IAB1": 8,
+    "IAB12": 8
+  },
+  "everydayhealth.com": {
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "realsimple.com": {
+    "IAB5": 8,
+    "IAB8": 8,
+    "IAB10": 8
+  },
+  "nymag.com": {
+    "IAB12": 8,
+    "IAB22": 8,
+    "IAB14": 8
+  },
+  "howstuffworks.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "livestrong.com": {
+    "IAB7": 8,
+    "IAB8": 8
+  },
+  "wired.com": {
+    "IAB19": 8,
+    "IAB15": 8,
+    "IAB12": 8
+  },
+  "livingly.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "motortrend.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB19": 8
+  },
+  "bedbathandbeyond.com": {
+    "IAB10": 8,
+    "IAB3": 8,
+    "IAB22": 8
+  },
+  "newyorker.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB1": 8
+  },
+  "ibtimes.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "evite.com": {
+    "IAB22": 8,
+    "IAB9": 8,
+    "IAB14": 8
+  },
+  "biography.com": {
+    "IAB5": 8,
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "pandora.com": {
+    "IAB1": 8
+  },
+  "charlotteobserver.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "eater.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "lonny.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "seattletimes.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "bizjournals.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB11": 8
+  },
+  "msnbc.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "theatlantic.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "imore.com": {
+    "IAB19": 8,
+    "IAB22": 8
+  },
+  "shape.com": {
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "bonappetit.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "fodors.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB7": 8
+  },
+  "samsclub.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB8": 8
+  },
+  "seriouseats.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "epicurious.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "cntraveler.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "gq.com": {
+    "IAB14": 8,
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "techwalla.com": {
+    "IAB5": 8,
+    "IAB19": 8
+  },
+  "elitedaily.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "sbnation.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB17": 8
+  },
+  "theknot.com": {
+    "IAB14": 8,
+    "IAB9": 8,
+    "IAB22": 8
+  },
+  "tripsavvy.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB9": 8
+  },
+  "nhl.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "autoguide.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB19": 8
+  },
+  "bodybuilding.com": {
+    "IAB7": 8,
+    "IAB8": 8
+  },
+  "priceline.com": {
+    "IAB20": 8,
+    "IAB3": 8,
+    "IAB22": 8
+  },
+  "bestbuy.com": {
+    "IAB19": 8,
+    "IAB22": 8,
+    "IAB10": 8
+  },
+  "mashable.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "fivethirtyeight.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "retailmenot.com": {
+    "IAB22": 8,
+    "IAB9": 8,
+    "IAB3": 8
+  },
+  "cwtv.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "techtimes.com": {
+    "IAB19": 8,
+    "IAB12": 8,
+    "IAB15": 8
+  },
+  "nationalgeographic.com": {
+    "IAB14": 8,
+    "IAB9": 8,
+    "IAB15": 8
+  },
+  "thebalance.com": {
+    "IAB13": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "psychologytoday.com": {
+    "IAB14": 8,
+    "IAB5": 8,
+    "IAB7": 8
+  },
+  "bbc.co.uk": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "chowhound.com": {
+    "IAB8": 8,
+    "IAB5": 8,
+    "IAB3": 8
+  },
+  "rottentomatoes.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "fandango.com": {
+    "IAB1": 8,
+    "IAB22": 8,
+    "IAB14": 8
+  },
+  "shutterfly.com": {
+    "IAB1": 8,
+    "IAB3": 8
+  },
+  "seekingalpha.com": {
+    "IAB13": 8,
+    "IAB3": 8,
+    "IAB12": 8
+  },
+  "investing.com": {
+    "IAB13": 8,
+    "IAB12": 8,
+    "IAB3": 8
+  },
+  "sporcle.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "slickdeals.net": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB9": 8
+  },
+  "whitepages.com": {
+    "IAB5": 8,
+    "IAB19": 8,
+    "IAB3": 8
+  },
+  "collider.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "rivals.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB22": 8
+  },
+  "ratemyprofessors.com": {
+    "IAB4": 8,
+    "IAB22": 8,
+    "IAB11": 8
+  },
+  "azcentral.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "fox2now.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "weatherbug.com": {
+    "IAB12": 8,
+    "IAB15": 8,
+    "IAB20": 8
+  },
+  "landsend.com": {
+    "IAB22": 8,
+    "IAB7": 8,
+    "IAB9": 8
+  },
+  "muscleandfitness.com": {
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "komonews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "milesplit.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB9": 8
+  },
+  "denverpost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "mtonews.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "wwltv.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB15": 8
+  },
+  "naplesnews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB5": 8
+  },
+  "astrologyanswers.com": {
+    "IAB14": 8,
+    "IAB1": 8,
+    "IAB7": 8
+  },
+  "sneakernews.com": {
+    "IAB22": 8,
+    "IAB17": 8,
+    "IAB9": 8
+  },
+  "activebeat.com": {
+    "IAB7": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "ksl.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "spotrac.com": {
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "mediaite.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "eatingwell.com": {
+    "IAB7": 8,
+    "IAB8": 8
+  },
+  "jpost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "rotowire.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "12tomatoes.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "macrumors.com": {
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "thepostmillennial.com": {
+    "IAB11": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "thejournaylist.com": {
+    "IAB1": 8,
+    "IAB20": 8,
+    "IAB12": 8
+  },
+  "ultimateclassicrock.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "ancient-origins.net": {
+    "IAB5": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "calcalistech.com": {
+    "IAB1": 8,
+    "IAB15": 8,
+    "IAB9": 8
+  },
+  "bleacherbreaker.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "scmp.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "xataka.com": {
+    "IAB15": 8,
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "listverse.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB5": 8
+  },
+  "slashgear.com": {
+    "IAB19": 8,
+    "IAB15": 8,
+    "IAB3": 8
+  },
+  "tummytuckhipo.com": {
+    "IAB1": 8,
+    "IAB7": 8
+  },
+  "publicschoolreview.com": {
+    "IAB4": 8,
+    "IAB5": 8,
+    "IAB22": 8
+  },
+  "courttv.com": {
+    "IAB11": 8,
+    "IAB12": 8,
+    "IAB15": 8
+  },
+  "complex.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "iaai.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB9": 8
+  },
+  "chocolatecoveredkatie.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "stylecraze.com": {
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "housebeautiful.com": {
+    "IAB1": 8,
+    "IAB10": 8,
+    "IAB14": 8
+  },
+  "thingiverse.com": {
+    "IAB19": 8,
+    "IAB1": 8,
+    "IAB15": 8
+  },
+  "powerpyx.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "wgntv.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "bestlifeonline.com": {
+    "IAB12": 8,
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "9to5mac.com": {
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "closerweekly.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "ridermagazine.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB17": 8
+  },
+  "popculture.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "womansday.com": {
+    "IAB14": 8,
+    "IAB1": 8,
+    "IAB5": 8
+  },
+  "food52.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "frommers.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB11": 8
+  },
+  "outdoorlife.com": {
+    "IAB9": 8,
+    "IAB16": 8,
+    "IAB22": 8
+  },
+  "ctpost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "outtherecolorado.com": {
+    "IAB20": 8,
+    "IAB9": 8,
+    "IAB12": 8
+  },
+  "playbill.com": {
+    "IAB1": 8,
+    "IAB22": 8,
+    "IAB4": 8
+  },
+  "btrending.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "chlloe.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "thedaddest.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "eatthis.com": {
+    "IAB7": 8,
+    "IAB8": 8,
+    "IAB12": 8
+  },
+  "style.ca": {
+    "IAB7": 8,
+    "IAB14": 8,
+    "IAB22": 8
+  },
+  "cycletrader.com": {
+    "IAB2": 8,
+    "IAB17": 8,
+    "IAB22": 8
+  },
+  "ign.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "yardbarker.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "fansided.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "elle.com": {
+    "IAB1": 8,
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "newarena.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB17": 8
+  },
+  "justjared.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "harpersbazaar.com": {
+    "IAB7": 8,
+    "IAB1": 8,
+    "IAB12": 8
+  },
+  "flyertalk.com": {
+    "IAB20": 8,
+    "IAB3": 8,
+    "IAB22": 8
+  },
+  "blackdoctor.org": {
+    "IAB7": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "tips-and-tricks.co": {
+    "IAB5": 8,
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "funcatz.com": {
+    "IAB9": 8,
+    "IAB1": 8
+  },
+  "barchart.com": {
+    "IAB3": 8
+  },
+  "homesandgardens.com": {
+    "IAB10": 8,
+    "IAB1": 8,
+    "IAB3": 8
+  },
+  "clark.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB19": 8
+  },
+  "tvinsider.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "dmv.org": {
+    "IAB2": 8,
+    "IAB11": 8,
+    "IAB13": 8
+  },
+  "benzinga.com": {
+    "IAB12": 8,
+    "IAB3": 8,
+    "IAB13": 8
+  },
+  "abcactionnews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB7": 8
+  },
+  "travelmath.com": {
+    "IAB5": 8,
+    "IAB20": 8,
+    "IAB3": 8
+  },
+  "10tv.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "thetravel.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "androidpolice.com": {
+    "IAB19": 8,
+    "IAB12": 8
+  },
+  "aheadofthyme.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "horseracingnation.com": {
+    "IAB1": 8,
+    "IAB9": 8
+  },
+  "patch.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "vg247.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "rockpapershotgun.com": {
+    "IAB1": 8,
+    "IAB22": 8
+  },
+  "sandiegouniontribune.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "phillyvoice.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "northjersey.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "lex18.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB7": 8
+  },
+  "6abc.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "wpde.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "dailyknicks.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "thelandryhat.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "saturdaydownsouth.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB22": 8
+  },
+  "epicstream.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB9": 8
+  },
+  "quizlet.com": {
+    "IAB4": 8,
+    "IAB5": 8,
+    "IAB15": 8
+  },
+  "tubitv.com": {
+    "IAB1": 8
+  },
+  "definition.org": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "mail.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "finviz.com": {
+    "IAB3": 8,
+    "IAB13": 8
+  },
+  "salary.com": {
+    "IAB3": 8,
+    "IAB4": 8,
+    "IAB11": 8
+  },
+  "wegotthiscovered.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "globalnews.ca": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "sportingnews.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "babycenter.com": {
+    "IAB14": 8,
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "hellomagazine.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "amc.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "worldstar.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "brides.com": {
+    "IAB14": 8,
+    "IAB9": 8,
+    "IAB22": 8
+  },
+  "tasty.co": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "huffpost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "insider.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "westernjournal.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "motor-junkie.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "damndelicious.net": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "loveandlemons.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "hotcars.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "thedrive.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB11": 8
+  },
+  "thebigmansworld.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "travelquiz.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB5": 8
+  },
+  "mensjournal.com": {
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "tastesbetterfromscratch.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "theseasonedmom.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB10": 8
+  },
+  "investingfuel.com": {
+    "IAB21": 8,
+    "IAB7": 8
+  },
+  "culinaryhill.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "thewoksoflife.com": {
+    "IAB8": 8,
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "lovetoknow.com": {
+    "IAB14": 8,
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "thecut.com": {
+    "IAB14": 8,
+    "IAB1": 8
+  },
+  "howsweeteats.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB14": 8
+  },
+  "boats.com": {
+    "IAB2": 8,
+    "IAB3": 8
+  },
+  "familyhandyman.com": {
+    "IAB10": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "self.com": {
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "twopeasandtheirpod.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "spaceshipsandlaserbeams.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB9": 8
+  },
+  "thecookierookie.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "emedicinehealth.com": {
+    "IAB7": 8,
+    "IAB12": 8,
+    "IAB11": 8
+  },
+  "iowagirleats.com": {
+    "IAB8": 8,
+    "IAB7": 8,
+    "IAB3": 8
+  },
+  "news.com.au": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "screenrant.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "thesaurus.com": {
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "pogo.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "fantasypros.com": {
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "motor1.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "greatergood.com": {
+    "IAB14": 8,
+    "IAB9": 8,
+    "IAB16": 8
+  },
+  "stylecaster.com": {
+    "IAB1": 8,
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "medicalnewstoday.com": {
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "slate.com": {
+    "IAB14": 8,
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "southernliving.com": {
+    "IAB8": 8,
+    "IAB5": 8,
+    "IAB10": 8
+  },
+  "jcpenney.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "apartmenttherapy.com": {
+    "IAB10": 8,
+    "IAB1": 8,
+    "IAB5": 8
+  },
+  "refinery29.com": {
+    "IAB14": 8,
+    "IAB1": 8,
+    "IAB7": 8
+  },
+  "thecinemaholic.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "urbandictionary.com": {
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "smithsonianmag.com": {
+    "IAB5": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "utahrealestate.com": {
+    "IAB21": 8,
+    "IAB20": 8,
+    "IAB13": 8
+  },
+  "food.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "health.com": {
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "mayoclinic.org": {
+    "IAB7": 8,
+    "IAB12": 8,
+    "IAB11": 8
+  },
+  "ondemandkorea.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB17": 8
+  },
+  "cbr.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB22": 8
+  },
+  "cafedelites.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "recipetineats.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "eatwell101.com": {
+    "IAB8": 8,
+    "IAB7": 8
+  },
+  "spanishdict.com": {
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "deadspin.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "fastcompany.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "bustle.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB3": 8
+  },
+  "budgetbytes.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "simplyrecipes.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "glamour.com": {
+    "IAB14": 8,
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "windowscentral.com": {
+    "IAB19": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "womanandhome.com": {
+    "IAB14": 8,
+    "IAB1": 8,
+    "IAB12": 8
+  },
+  "popsci.com": {
+    "IAB15": 8,
+    "IAB3": 8,
+    "IAB19": 8
+  },
+  "theprimarymarket.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "genius.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB5": 8
+  },
+  "cleverclassic.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "pastemagazine.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "thesportsdrop.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB17": 8
+  },
+  "aternos.org": {
+    "IAB1": 8
+  },
+  "science-a2z.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "wellplated.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "mediacomtoday.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB19": 8
+  },
+  "insideevs.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "realgm.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "esquire.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "audacy.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB19": 8
+  },
+  "freep.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "sciencealert.com": {
+    "IAB15": 8,
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "lastnighton.com": {
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "familythis.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "disneytouristblog.com": {
+    "IAB20": 8,
+    "IAB9": 8,
+    "IAB16": 8
+  },
+  "tvline.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "cleveland.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB17": 8
+  },
+  "babylonbee.com": {
+    "IAB14": 8,
+    "IAB12": 8,
+    "IAB11": 8
+  },
+  "elvocero.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "sun-sentinel.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "kstp.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB11": 8
+  },
+  "cyclonefanatic.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB22": 8
+  },
+  "lavanguardia.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "lifeandstylemag.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "thecrazytourist.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB21": 8
+  },
+  "firstcoastnews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "shefinds.com": {
+    "IAB7": 8,
+    "IAB14": 8
+  },
+  "floridatoday.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB7": 8
+  },
+  "swingcompleto.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "masslive.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "touropia.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "realhousemoms.com": {
+    "IAB8": 8,
+    "IAB10": 8,
+    "IAB1": 8
+  },
+  "thespruceeats.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB5": 8
+  },
+  "hiddenremote.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "reviewjournal.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "dansdeals.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB13": 8
+  },
+  "pocket-lint.com": {
+    "IAB19": 8,
+    "IAB22": 8
+  },
+  "timeout.com": {
+    "IAB5": 8,
+    "IAB1": 8,
+    "IAB20": 8
+  },
+  "arkadium.com": {
+    "IAB1": 8,
+    "IAB14": 8
+  },
+  "facty.com": {
+    "IAB7": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "wordreference.com": {
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "fragrantica.com": {
+    "IAB7": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "milb.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "clutchpoints.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "shareably.net": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "claireandjamie.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB9": 8
+  },
+  "fangraphs.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "gocomics.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB22": 8
+  },
+  "integral-calculator.com": {
+    "IAB19": 8
+  },
+  "showsnob.com": {
+    "IAB1": 8,
+    "IAB9": 8
+  },
+  "cafemom.com": {
+    "IAB14": 8,
+    "IAB7": 8,
+    "IAB1": 8
+  },
+  "triviagenius.com": {
+    "IAB1": 8,
+    "IAB5": 8,
+    "IAB14": 8
+  },
+  "percentagecalculator.net": {
+    "IAB19": 8
+  },
+  "distractify.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "brobible.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB17": 8
+  },
+  "kare11.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "scrabblewordfinder.org": {
+    "IAB1": 8,
+    "IAB5": 8
+  },
+  "king5.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "momjunction.com": {
+    "IAB14": 8,
+    "IAB5": 8,
+    "IAB1": 8
+  },
+  "guitarworld.com": {
+    "IAB1": 8,
+    "IAB4": 8,
+    "IAB12": 8
+  },
+  "wfmz.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "didyouknowfacts.com": {
+    "IAB14": 8,
+    "IAB1": 8
+  },
+  "thechunkychef.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB10": 8
+  },
+  "wfmynews2.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "theonion.com": {
+    "IAB12": 8,
+    "IAB14": 8,
+    "IAB1": 8
+  },
+  "adweek.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB19": 8
+  },
+  "courier-journal.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "bangordailynews.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "wnep.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "macworld.com": {
+    "IAB19": 8,
+    "IAB5": 8
+  },
+  "nflmockdraftdatabase.com": {
+    "IAB17": 8,
+    "IAB22": 8,
+    "IAB1": 8
+  },
+  "sportslogos.net": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "runnersworld.com": {
+    "IAB17": 8,
+    "IAB9": 8,
+    "IAB7": 8
+  },
+  "stocktwits.com": {
+    "IAB13": 8,
+    "IAB3": 8,
+    "IAB12": 8
+  },
+  "history-a2z.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "digitaltrends.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB9": 8
+  },
+  "halfbakedharvest.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB1": 8
+  },
+  "wral.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "androidauthority.com": {
+    "IAB19": 8,
+    "IAB22": 8
+  },
+  "moneywise.com": {
+    "IAB14": 8,
+    "IAB3": 8,
+    "IAB11": 8
+  },
+  "alot.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "oilprice.com": {
+    "IAB3": 8,
+    "IAB12": 8,
+    "IAB2": 8
+  },
+  "carbuzz.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "blu-ray.com": {
+    "IAB1": 8,
+    "IAB22": 8,
+    "IAB19": 8
+  },
+  "medicinenet.com": {
+    "IAB7": 8,
+    "IAB12": 8
+  },
+  "allmusic.com": {
+    "IAB1": 8,
+    "IAB5": 8
+  },
+  "traderie.com": {
+    "IAB1": 8,
+    "IAB22": 8,
+    "IAB21": 8
+  },
+  "basketball-reference.com": {
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "blabbermouth.net": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB14": 8
+  },
+  "bet.com": {
+    "IAB1": 8,
+    "IAB12": 8,
+    "IAB7": 8
+  },
+  "ontvtonight.com": {
+    "IAB1": 8,
+    "IAB17": 8,
+    "IAB12": 8
+  },
+  "makeuseof.com": {
+    "IAB19": 8,
+    "IAB5": 8
+  },
+  "everydaymonkey.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "fixya.com": {
+    "IAB5": 8,
+    "IAB2": 8,
+    "IAB22": 8
+  },
+  "conservativebrief.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "u.gg": {
+    "IAB1": 8
+  },
+  "lifestyle-a2z.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "marieclaire.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "aljazeera.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "rogerebert.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB9": 8
+  },
+  "braincandy.net": {
+    "IAB1": 8
+  },
+  "mgoblog.com": {
+    "IAB12": 8,
+    "IAB17": 8,
+    "IAB1": 8
+  },
+  "brickseek.com": {
+    "IAB22": 8,
+    "IAB3": 8,
+    "IAB10": 8
+  },
+  "tastingtable.com": {
+    "IAB8": 8,
+    "IAB3": 8,
+    "IAB7": 8
+  },
+  "trueachievements.com": {
+    "IAB1": 8,
+    "IAB19": 8
+  },
+  "nola.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB1": 8
+  },
+  "blackpeoplemeet.com": {
+    "IAB1": 8
+  },
+  "pdfwonder.com": {
+    "IAB1": 8,
+    "IAB14": 8,
+    "IAB12": 8
+  },
+  "washingtontimes.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "onlyinyourstate.com": {
+    "IAB20": 8,
+    "IAB5": 8,
+    "IAB9": 8
+  },
+  "bestplaces.net": {
+    "IAB5": 8,
+    "IAB14": 8,
+    "IAB11": 8
+  },
+  "nintendolife.com": {
+    "IAB1": 8,
+    "IAB19": 8,
+    "IAB22": 8
+  },
+  "wcvb.com": {
+    "IAB12": 8,
+    "IAB1": 8,
+    "IAB15": 8
+  },
+  "palmbeachpost.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB7": 8
+  },
+  "hebbarskitchen.com": {
+    "IAB8": 8,
+    "IAB14": 8,
+    "IAB3": 8
+  },
+  "desmoinesregister.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "myfox8.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "sportscasting.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "tennessean.com": {
+    "IAB12": 8,
+    "IAB11": 8,
+    "IAB14": 8
+  },
+  "iseecars.com": {
+    "IAB2": 8,
+    "IAB22": 8,
+    "IAB3": 8
+  },
+  "cagesideseats.com": {
+    "IAB17": 8,
+    "IAB12": 8,
+    "IAB1": 8
+  },
+  "mashed.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "standardnews.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "skinnytaste.com": {
+    "IAB8": 6,
+    "IAB7": 6,
+    "IAB3": 6
+  },
+  "yourbump.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "autoevolution.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB3": 6
+  },
+  "iflscience.com": {
+    "IAB15": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "countryliving.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "biblegateway.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "wordplays.com": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB4": 6
+  },
+  "lotterypost.com": {
+    "IAB1": 6,
+    "IAB11": 6,
+    "IAB12": 6
+  },
+  "lensvid.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "mcpedl.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "thewrap.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "prevention.com": {
+    "IAB7": 6,
+    "IAB12": 6
+  },
+  "usphonebook.com": {
+    "IAB5": 6,
+    "IAB19": 6,
+    "IAB21": 6
+  },
+  "atlantablackstar.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "investors.com": {
+    "IAB3": 6,
+    "IAB13": 6,
+    "IAB12": 6
+  },
+  "weatherspark.com": {
+    "IAB1": 6,
+    "IAB3": 6,
+    "IAB19": 6
+  },
+  "dodgersnation.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "ebaumsworld.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "cincinnati.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "dengarden.com": {
+    "IAB10": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "thelayoff.com": {
+    "IAB3": 6,
+    "IAB12": 6,
+    "IAB13": 6
+  },
+  "thecountrycook.net": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "discogs.com": {
+    "IAB1": 6,
+    "IAB22": 6,
+    "IAB14": 6
+  },
+  "kitco.com": {
+    "IAB3": 6,
+    "IAB12": 6
+  },
+  "wordunscrambler.net": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB4": 6
+  },
+  "thethings.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "49erswebzone.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "netflixlife.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "androidcentral.com": {
+    "IAB19": 6,
+    "IAB22": 6
+  },
+  "tetr.io": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "sacbee.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "huskermax.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "livesoccertv.com": {
+    "IAB1": 6,
+    "IAB17": 6,
+    "IAB12": 6
+  },
+  "pressurecookrecipes.com": {
+    "IAB8": 6,
+    "IAB10": 6,
+    "IAB22": 6
+  },
+  "upi.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "christianpost.com": {
+    "IAB14": 6,
+    "IAB12": 6,
+    "IAB5": 6
+  },
+  "wlos.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "jlwranglerforums.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB1": 6
+  },
+  "igeeksblog.com": {
+    "IAB19": 6,
+    "IAB5": 6
+  },
+  "nbc4i.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "kardashiandish.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "keloland.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "wzzm13.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB20": 6
+  },
+  "bizpacreview.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "allure.com": {
+    "IAB7": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "softwaretestinghelp.com": {
+    "IAB19": 6,
+    "IAB15": 6,
+    "IAB3": 6
+  },
+  "wcnc.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "fieldandstream.com": {
+    "IAB9": 6,
+    "IAB16": 6,
+    "IAB22": 6
+  },
+  "unpasted.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "celebitchy.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "valleycentral.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "alldayidreamaboutfood.com": {
+    "IAB8": 6,
+    "IAB7": 6
+  },
+  "constative.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "spendwithpennies.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "tmz.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "biblehub.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "signupgenius.com": {
+    "IAB19": 6,
+    "IAB3": 6
+  },
+  "legacy.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "toocool2betrue.com": {
+    "IAB1": 6,
+    "IAB3": 6,
+    "IAB20": 6
+  },
+  "essentiallysports.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "ranker.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "womenshealthmag.com": {
+    "IAB7": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "hermoments.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "mundohispanico.com": {
+    "IAB14": 6,
+    "IAB12": 6,
+    "IAB3": 6
+  },
+  "chron.com": {
+    "IAB3": 6,
+    "IAB5": 6,
+    "IAB12": 6
+  },
+  "footwearnews.com": {
+    "IAB7": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "decider.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "ratemyjob.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB4": 6
+  },
+  "boredomtherapy.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB15": 6
+  },
+  "triviaboss.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "thesaltymarshmallow.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "wtop.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "classiccars.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB21": 6
+  },
+  "orlandosentinel.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "redshirtsalwaysdie.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB9": 6
+  },
+  "luxandlush.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "woot.com": {
+    "IAB22": 6,
+    "IAB19": 6,
+    "IAB10": 6
+  },
+  "rennlist.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB1": 6
+  },
+  "simplypsychology.org": {
+    "IAB5": 6,
+    "IAB14": 6,
+    "IAB7": 6
+  },
+  "thefreedictionary.com": {
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "aboutnutra.com": {
+    "IAB7": 6,
+    "IAB8": 6
+  },
+  "parentztalk.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "mlbtraderumors.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "metro.pr": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB11": 6
+  },
+  "walterfootball.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "enotes.com": {
+    "IAB5": 6,
+    "IAB4": 6,
+    "IAB1": 6
+  },
+  "aviewfrommyseat.com": {
+    "IAB1": 6,
+    "IAB22": 6,
+    "IAB17": 6
+  },
+  "awfulannouncing.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "toyota-4runner.org": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB19": 6
+  },
+  "deccanherald.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "oneindia.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "globalrph.com": {
+    "IAB7": 6,
+    "IAB5": 6,
+    "IAB12": 6
+  },
+  "trackitt.com": {
+    "IAB11": 6,
+    "IAB4": 6,
+    "IAB14": 6
+  },
+  "hotnewhiphop.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "sportswar.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "abc15.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "rajah.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "wralsportsfan.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "opossumsauce.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "islamicfinder.org": {
+    "IAB14": 6,
+    "IAB5": 6,
+    "IAB20": 6
+  },
+  "gbatemp.net": {
+    "IAB1": 6,
+    "IAB19": 6,
+    "IAB22": 6
+  },
+  "hiphopdx.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "ghanaweb.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "chefcuisto.com": {
+    "IAB8": 6
+  },
+  "inchcalculator.com": {
+    "IAB5": 6,
+    "IAB3": 6,
+    "IAB15": 6
+  },
+  "sunsigns.org": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB9": 6
+  },
+  "astrology.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB15": 6
+  },
+  "obsev.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "journeyranger.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "wackojaco.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "freshedits.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "celebwell.com": {
+    "IAB1": 6
+  },
+  "letsrun.com": {
+    "IAB17": 6,
+    "IAB9": 6,
+    "IAB12": 6
+  },
+  "excellenttown.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "word.tips": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB4": 6
+  },
+  "bridgebase.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "cheatsheet.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "ballotpedia.org": {
+    "IAB11": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "5dwallpaper.com": {
+    "IAB1": 6
+  },
+  "moneycontrol.com": {
+    "IAB12": 6,
+    "IAB3": 6,
+    "IAB13": 6
+  },
+  "investmentguru.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "postfun.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "quizzable.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "larrybrownsports.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "hollywoodlife.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "planetware.com": {
+    "IAB20": 6,
+    "IAB5": 6,
+    "IAB9": 6
+  },
+  "jsonline.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "triblive.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB4": 6
+  },
+  "mrexcel.com": {
+    "IAB19": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "ocregister.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "directhealthy.com": {
+    "IAB1": 6
+  },
+  "houstonchronicle.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "resetera.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "townandcountrymag.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB5": 6
+  },
+  "gsmarena.com": {
+    "IAB19": 6,
+    "IAB22": 6
+  },
+  "betterbe.co": {
+    "IAB3": 6,
+    "IAB22": 6,
+    "IAB1": 6
+  },
+  "nhra.com": {
+    "IAB17": 6,
+    "IAB2": 6,
+    "IAB1": 6
+  },
+  "vacationidea.com": {
+    "IAB20": 6,
+    "IAB5": 6,
+    "IAB14": 6
+  },
+  "thewholesomedish.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "footballscoop.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "quizscape.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "tastesoflizzyt.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "moneypop.com": {
+    "IAB12": 6,
+    "IAB3": 6,
+    "IAB14": 6
+  },
+  "appleinsider.com": {
+    "IAB19": 6,
+    "IAB12": 6
+  },
+  "bing.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "urbanbellemag.com": {
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "taskandpurpose.com": {
+    "IAB11": 6,
+    "IAB5": 6,
+    "IAB12": 6
+  },
+  "semana.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "butterwithasideofbread.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "larazon.es": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "elespanol.com": {
+    "IAB14": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "geology.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB20": 6
+  },
+  "heraldweekly.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "natashaskitchen.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "dailytimewaste.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "inspiredtaste.net": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "sportskeeda.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB17": 6
+  },
+  "therecipecritic.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "homehacks.co": {
+    "IAB1": 6,
+    "IAB3": 6,
+    "IAB14": 6
+  },
+  "pcgamesn.com": {
+    "IAB1": 6,
+    "IAB22": 6
+  },
+  "onceuponachef.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "livingmgz.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "nickiswift.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "medical-news.org": {
+    "IAB7": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "kijiji.ca": {
+    "IAB22": 6,
+    "IAB21": 6,
+    "IAB2": 6
+  },
+  "boston.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "tennisworldusa.org": {
+    "IAB17": 6,
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "averiecooks.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "dealnews.com": {
+    "IAB22": 6,
+    "IAB3": 6,
+    "IAB8": 6
+  },
+  "allkpop.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "dailyvoice.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "mediotiempo.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "football.london": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "metropcs.mobi": {
+    "IAB19": 6,
+    "IAB1": 6
+  },
+  "10faq.com": {
+    "IAB7": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "politicalwire.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "lipstickalley.com": {
+    "IAB14": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "eenadu.net": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "lifehacker.com": {
+    "IAB5": 6,
+    "IAB19": 6
+  },
+  "almanac.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB3": 6
+  },
+  "equibase.com": {
+    "IAB1": 6
+  },
+  "oregonlive.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "cox.com": {
+    "IAB19": 6,
+    "IAB22": 6
+  },
+  "denofgeek.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "ewrestlingnews.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "wltx.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "abc7ny.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "socialblade.com": {
+    "IAB1": 6,
+    "IAB19": 6,
+    "IAB3": 6
+  },
+  "autotrader.ca": {
+    "IAB2": 6,
+    "IAB22": 6
+  },
+  "eurogamer.net": {
+    "IAB1": 6,
+    "IAB15": 6
+  },
+  "timesunion.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "hotair.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "kansascity.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "daringgourmet.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "kirbiecravings.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "active.com": {
+    "IAB17": 6,
+    "IAB7": 6,
+    "IAB9": 6
+  },
+  "hunker.com": {
+    "IAB10": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "appunwrapper.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "wftv.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "hitc.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "wordunscrambler.me": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB4": 6
+  },
+  "patient.info": {
+    "IAB7": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "411mania.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "knowing-jesus.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "sciencedaily.com": {
+    "IAB15": 6,
+    "IAB7": 6,
+    "IAB12": 6
+  },
+  "indiewire.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "fox5atlanta.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "dinnerthendessert.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "thefunpost.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "larepublica.pe": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "kvue.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "klix.ba": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "gta5-mods.com": {
+    "IAB1": 6
+  },
+  "mingpao.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "townhall.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "prende.tv": {
+    "IAB19": 6,
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "9to5google.com": {
+    "IAB19": 6,
+    "IAB12": 6
+  },
+  "bgr.com": {
+    "IAB12": 6,
+    "IAB5": 6,
+    "IAB14": 6
+  },
+  "elcolombiano.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "siliconera.com": {
+    "IAB1": 6,
+    "IAB22": 6
+  },
+  "hoopshype.com": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "autocar.co.uk": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB19": 6
+  },
+  "fox5vegas.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "zap2it.com": {
+    "IAB1": 6,
+    "IAB21": 6
+  },
+  "ktvb.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "fandom.com": {
+    "IAB1": 6
+  },
+  "historydaily.org": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "barstoolsports.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB17": 6
+  },
+  "accuradio.com": {
+    "IAB1": 6,
+    "IAB19": 6,
+    "IAB3": 6
+  },
+  "wrestlinginc.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "travelerdreams.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "popsugar.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB7": 6
+  },
+  "teddyfeed.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "bonvoyaged.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "thelist.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "dictionary.com": {
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "abc7.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "mathway.com": {
+    "IAB5": 6
+  },
+  "hip2save.com": {
+    "IAB22": 6,
+    "IAB3": 6,
+    "IAB9": 6
+  },
+  "apartmentguide.com": {
+    "IAB21": 6,
+    "IAB20": 6,
+    "IAB14": 6
+  },
+  "marinetraffic.com": {
+    "IAB3": 6,
+    "IAB20": 6,
+    "IAB5": 6
+  },
+  "detroitnews.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "windstream.net": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "tvtv.us": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB19": 6
+  },
+  "calculatorsoup.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB13": 6
+  },
+  "ford-trucks.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB5": 6
+  },
+  "17track.net": {
+    "IAB3": 6,
+    "IAB8": 6,
+    "IAB5": 6
+  },
+  "har.com": {
+    "IAB21": 6,
+    "IAB20": 6
+  },
+  "goodnewsnetwork.org": {
+    "IAB14": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "electrek.co": {
+    "IAB22": 6,
+    "IAB2": 6,
+    "IAB3": 6
+  },
+  "gamesradar.com": {
+    "IAB1": 6,
+    "IAB22": 6
+  },
+  "comicbook.com": {
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "manchestereveningnews.co.uk": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB17": 6
+  },
+  "movieweb.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "zulily.com": {
+    "IAB22": 6,
+    "IAB7": 6,
+    "IAB14": 6
+  },
+  "espncricinfo.com": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "fox13news.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "doctoreport.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "derivative-calculator.net": {
+    "IAB19": 6
+  },
+  "ksdk.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "lcsun-news.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "tallahassee.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "fox59.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "kitchenfunwithmy3sons.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "wmur.com": {
+    "IAB12": 6,
+    "IAB15": 6,
+    "IAB1": 6
+  },
+  "pressdemocrat.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "natureworldtoday.com": {
+    "IAB14": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "tapatalk.com": {
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "indystar.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB11": 6
+  },
+  "omnicalculator.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB3": 6
+  },
+  "addapinch.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "buffalonews.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "disneydining.com": {
+    "IAB20": 6,
+    "IAB9": 6,
+    "IAB16": 6
+  },
+  "disneyfoodblog.com": {
+    "IAB20": 6,
+    "IAB9": 6,
+    "IAB16": 6
+  },
+  "cibercuba.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "totalpast.com": {
+    "IAB1": 6,
+    "IAB9": 6,
+    "IAB10": 6
+  },
+  "wbir.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "boostmobile.com": {
+    "IAB19": 6
+  },
+  "ladysavings.com": {
+    "IAB22": 6,
+    "IAB3": 6,
+    "IAB8": 6
+  },
+  "baltimoresun.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "wspa.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "trendymatter.com": {
+    "IAB10": 6,
+    "IAB7": 6,
+    "IAB3": 6
+  },
+  "syracuse.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "fox4kc.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "thecalculatorsite.com": {
+    "IAB5": 6,
+    "IAB13": 6,
+    "IAB3": 6
+  },
+  "omaha.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB17": 6
+  },
+  "curiousconcept.com": {
+    "IAB3": 6
+  },
+  "windowsreport.com": {
+    "IAB19": 6,
+    "IAB5": 6,
+    "IAB22": 6
+  },
+  "elpais.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "greatschools.org": {
+    "IAB4": 6,
+    "IAB5": 6,
+    "IAB22": 6
+  },
+  "wkrn.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "lcpdfr.com": {
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "texags.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB22": 6
+  },
+  "powerthesaurus.org": {
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "racingjunk.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB17": 6
+  },
+  "eluniversal.com.mx": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "twistedsifter.com": {
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "totalmotorcycle.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB17": 6
+  },
+  "wsbtv.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "whattoexpect.com": {
+    "IAB14": 6,
+    "IAB7": 6,
+    "IAB12": 6
+  },
+  "rediff.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "theringer.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB17": 6
+  },
+  "quora.com": {
+    "IAB5": 6,
+    "IAB14": 6,
+    "IAB3": 6
+  },
+  "ls1tech.com": {
+    "IAB2": 6,
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "ourhealthdepot.com": {
+    "IAB7": 6,
+    "IAB8": 6,
+    "IAB1": 6
+  },
+  "arrowheadaddict.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "kfor.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "paltalk.com": {
+    "IAB19": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "thespun.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "abc30.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "dailyfitnesstip.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB7": 6
+  },
+  "citationmachine.net": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB14": 6
+  },
+  "zynga.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB5": 6
+  },
+  "docjournals.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "blitz.gg": {
+    "IAB1": 6
+  },
+  "moneyawaits.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB3": 6
+  },
+  "gradesaver.com": {
+    "IAB5": 6,
+    "IAB1": 6,
+    "IAB4": 6
+  },
+  "sltrib.com": {
+    "IAB14": 6,
+    "IAB12": 6,
+    "IAB11": 6
+  },
+  "a-z-animals.com": {
+    "IAB9": 6,
+    "IAB15": 6
+  },
+  "cracked.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "steelersdepot.com": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "cookieandkate.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "tagged.com": {
+    "IAB1": 6
+  },
+  "stltoday.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "quizdaily.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "jezebel.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "cox.net": {
+    "IAB19": 6,
+    "IAB1": 6
+  },
+  "minimalistbaker.com": {
+    "IAB8": 6,
+    "IAB7": 6,
+    "IAB3": 6
+  },
+  "brakeforit.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB1": 6
+  },
+  "gimmesomeoven.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "9news.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "ktla.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "sfchronicle.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "infoplease.com": {
+    "IAB5": 6,
+    "IAB14": 6,
+    "IAB20": 6
+  },
+  "metv.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "researchgate.net": {
+    "IAB3": 6,
+    "IAB15": 6,
+    "IAB4": 6
+  },
+  "loudwire.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "wdwnt.com": {
+    "IAB20": 6,
+    "IAB9": 6,
+    "IAB16": 6
+  },
+  "fox8.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "maxpreps.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB4": 6
+  },
+  "downshiftology.com": {
+    "IAB8": 6,
+    "IAB5": 6,
+    "IAB7": 6
+  },
+  "thehockeywriters.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "jacksonville.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "wordsolver.net": {
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "sneakertoast.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB7": 6
+  },
+  "acouplecooks.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "wthr.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "auctionzip.com": {
+    "IAB22": 6,
+    "IAB9": 6,
+    "IAB10": 6
+  },
+  "downdetector.com": {
+    "IAB19": 6,
+    "IAB22": 6
+  },
+  "ajc.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "jocooks.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "tvanouvelles.ca": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB16": 6
+  },
+  "upworthy.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB11": 6
+  },
+  "fflogs.com": {
+    "IAB1": 6,
+    "IAB11": 6
+  },
+  "vogue.com": {
+    "IAB7": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "popularmechanics.com": {
+    "IAB22": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "zoosk.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "w2g.tv": {
+    "IAB1": 6,
+    "IAB22": 6
+  },
+  "justonecookbook.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "timeanddate.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB9": 6
+  },
+  "stereogum.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "linguee.com": {
+    "IAB1": 6
+  },
+  "lsn.com": {
+    "IAB22": 6,
+    "IAB2": 6,
+    "IAB3": 6
+  },
+  "mysanantonio.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "sugarspunrun.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "wyff4.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB15": 6
+  },
+  "rgj.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "thecozycook.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "newsday.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB3": 6
+  },
+  "kdvr.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "star-telegram.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "architecturaldigest.com": {
+    "IAB1": 6,
+    "IAB10": 6,
+    "IAB3": 6
+  },
+  "shmoop.com": {
+    "IAB5": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "news-gazette.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "smallbiztrends.com": {
+    "IAB3": 6,
+    "IAB13": 6,
+    "IAB12": 6
+  },
+  "baseball-almanac.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "talksport.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "wusa9.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "collegeconfidential.com": {
+    "IAB4": 6,
+    "IAB11": 6,
+    "IAB3": 6
+  },
+  "zillow.com": {
+    "IAB21": 6,
+    "IAB20": 6,
+    "IAB13": 6
+  },
+  "apnews.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "itsthevibe.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "typing.com": {
+    "IAB5": 6,
+    "IAB15": 6
+  },
+  "nexusmods.com": {
+    "IAB1": 6
+  },
+  "vnexpress.net": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "groovyhistory.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "dogtime.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB9": 6
+  },
+  "scitechdaily.com": {
+    "IAB15": 6,
+    "IAB3": 6,
+    "IAB12": 6
+  },
+  "pastfactory.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "pensandpatron.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "upbeatnews.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "salon.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "parade.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "rvtravel.com": {
+    "IAB2": 6,
+    "IAB3": 6,
+    "IAB22": 6
+  },
+  "buzzerilla.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "pethelpful.com": {
+    "IAB9": 6,
+    "IAB14": 6
+  },
+  "dotesports.com": {
+    "IAB1": 6,
+    "IAB17": 6
+  },
+  "mobispirit.com": {
+    "IAB1": 6,
+    "IAB9": 6,
+    "IAB14": 6
+  },
+  "homeaddict.io": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB14": 6
+  },
+  "tampabay.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "gardeningknowhow.com": {
+    "IAB10": 6,
+    "IAB3": 6,
+    "IAB15": 6
+  },
+  "arcamax.com": {
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "morehackz.com": {
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "foodiecrush.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "hola.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "percolately.com": {
+    "IAB14": 6,
+    "IAB7": 6,
+    "IAB1": 6
+  },
+  "notalwaysright.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "boredpanda.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "theblast.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "parentmood.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "intouchweekly.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "ndnation.com": {
+    "IAB12": 6,
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "mlive.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "dinneratthezoo.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "mundodeportivo.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB17": 6
+  },
+  "airg.com": {
+    "IAB19": 6,
+    "IAB1": 6
+  },
+  "tasteofcountry.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "topspeed.com": {
+    "IAB2": 6,
+    "IAB22": 6,
+    "IAB1": 6
+  },
+  "worldtravelling.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB19": 6
+  },
+  "lilluna.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "uexpress.com": {
+    "IAB14": 6,
+    "IAB7": 6,
+    "IAB5": 6
+  },
+  "reason.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "insideedition.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB9": 6
+  },
+  "uproxx.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "pastchronicles.com": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB14": 6
+  },
+  "lakeshowlife.com": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "parents.com": {
+    "IAB14": 6,
+    "IAB7": 6,
+    "IAB4": 6
+  },
+  "copykat.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB10": 6
+  },
+  "bluegazette.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "cuteness.com": {
+    "IAB9": 6,
+    "IAB14": 6
+  },
+  "healthprep.com": {
+    "IAB7": 6,
+    "IAB12": 6
+  },
+  "newsobserver.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "lifehack.org": {
+    "IAB14": 6,
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "kgw.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "hockeydb.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "comicskingdom.com": {
+    "IAB1": 6,
+    "IAB22": 6,
+    "IAB14": 6
+  },
+  "tvpassport.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB17": 6
+  },
+  "tlc.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "thedenverchannel.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "bossip.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "yallakora.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "spinditty.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB5": 6
+  },
+  "airliners.net": {
+    "IAB3": 6,
+    "IAB20": 6,
+    "IAB9": 6
+  },
+  "tiermaker.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "thatgrapejuice.net": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "wgrz.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "digg.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB19": 6
+  },
+  "lyrics.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB5": 6
+  },
+  "curbed.com": {
+    "IAB3": 6,
+    "IAB21": 6,
+    "IAB12": 6
+  },
+  "espinof.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB9": 6
+  },
+  "boxrec.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB5": 6
+  },
+  "wesh.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "sheknows.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "univision.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "motorsearches.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "giveitlove.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB9": 6
+  },
+  "etonline.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "bobvila.com": {
+    "IAB10": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "tds.net": {
+    "IAB1": 6,
+    "IAB19": 6,
+    "IAB12": 6
+  },
+  "crazygames.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "boattrader.com": {
+    "IAB2": 6,
+    "IAB9": 6,
+    "IAB3": 6
+  },
+  "zacks.com": {
+    "IAB13": 6,
+    "IAB3": 6,
+    "IAB12": 6
+  },
+  "justapinch.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB7": 6
+  },
+  "cookingclassy.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "yanksgoyard.com": {
+    "IAB12": 6,
+    "IAB1": 6
+  },
+  "larousse.fr": {
+    "IAB1": 6,
+    "IAB4": 6
+  },
+  "quizly.co": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "leaguesecretary.com": {
+    "IAB17": 6,
+    "IAB1": 6
+  },
+  "gatorcountry.com": {
+    "IAB17": 6,
+    "IAB12": 6,
+    "IAB22": 6
+  },
+  "thesimsresource.com": {
+    "IAB1": 6
+  },
+  "alphr.com": {
+    "IAB5": 6,
+    "IAB19": 6
+  },
+  "theweek.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "solitairesummer.com": {
+    "IAB1": 6
+  },
+  "newser.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "abc.es": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB11": 6
+  },
+  "koreadaily.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "cardgames.io": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "indianhealthyrecipes.com": {
+    "IAB8": 6,
+    "IAB14": 6,
+    "IAB3": 6
+  },
+  "pgatour.com": {
+    "IAB17": 6,
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "liga.net": {
+    "IAB11": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "heysigmund.com": {
+    "IAB14": 6,
+    "IAB7": 6,
+    "IAB5": 6
+  },
+  "123freecell.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "worldatlas.com": {
+    "IAB5": 6,
+    "IAB20": 6,
+    "IAB14": 6
+  },
+  "wjhl.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "straight.com": {
+    "IAB7": 6,
+    "IAB20": 6,
+    "IAB21": 6
+  },
+  "lucianne.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "owlcation.com": {
+    "IAB5": 6,
+    "IAB15": 6,
+    "IAB14": 6
+  },
+  "cambridge.org": {
+    "IAB5": 6,
+    "IAB1": 6
+  },
+  "bestwordlist.com": {
+    "IAB5": 6,
+    "IAB4": 6,
+    "IAB1": 6
+  },
+  "bestclassicbands.com": {
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "lovehairstyles.com": {
+    "IAB7": 6,
+    "IAB14": 6,
+    "IAB22": 6
+  },
+  "behindthevoiceactors.com": {
+    "IAB1": 6
+  },
+  "jetpunk.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "draftkings.com": {
+    "IAB17": 6,
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "gmanetwork.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "irishcentral.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "smartertravel.com": {
+    "IAB20": 6,
+    "IAB5": 6,
+    "IAB22": 6
+  },
+  "flightaware.com": {
+    "IAB3": 6,
+    "IAB20": 6,
+    "IAB19": 6
+  },
+  "domesticatedcompanion.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "heavy.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB17": 6
+  },
+  "twentytwowords.com": {
+    "IAB22": 6,
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "vppgamingnetwork.com": {
+    "IAB1": 6,
+    "IAB19": 6
+  },
+  "cheezburger.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "sallysbakingaddiction.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "spin.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB7": 6
+  },
+  "brain-sharper.com": {
+    "IAB1": 6,
+    "IAB14": 6,
+    "IAB12": 6
+  },
+  "solitaired.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "mydramalist.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "giantfreakinrobot.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "mirror.co.uk": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "allthatsinteresting.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "interestingengineering.com": {
+    "IAB15": 6,
+    "IAB3": 6,
+    "IAB19": 6
+  },
+  "familyminded.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB9": 6
+  },
+  "staradvertiser.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "radiopaedia.org": {
+    "IAB19": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "rxlist.com": {
+    "IAB7": 6,
+    "IAB8": 6
+  },
+  "chattanoogan.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "ifly.com": {
+    "IAB20": 6,
+    "IAB3": 6,
+    "IAB11": 6
+  },
+  "brickset.com": {
+    "IAB22": 6,
+    "IAB14": 6,
+    "IAB9": 6
+  },
+  "soapcentral.com": {
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "doyouremember.com": {
+    "IAB1": 6,
+    "IAB12": 6,
+    "IAB14": 6
+  },
+  "gamerescape.com": {
+    "IAB1": 6
+  },
+  "latimescrosswordanswers.com": {
+    "IAB1": 6,
+    "IAB5": 6,
+    "IAB4": 6
+  },
+  "petsreporter.com": {
+    "IAB1": 6,
+    "IAB9": 6,
+    "IAB14": 6
+  },
+  "thisoldhouse.com": {
+    "IAB10": 6,
+    "IAB3": 6,
+    "IAB5": 6
+  },
+  "primerahora.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "themediterraneandish.com": {
+    "IAB8": 6,
+    "IAB1": 6,
+    "IAB3": 6
+  },
+  "soaphub.com": {
+    "IAB1": 6,
+    "IAB12": 6
+  },
+  "meaww.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "ambitiouskitchen.com": {
+    "IAB8": 6,
+    "IAB7": 6,
+    "IAB3": 6
+  },
+  "nbc-2.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB1": 6
+  },
+  "securenetsystems.net": {
+    "IAB1": 6,
+    "IAB19": 6,
+    "IAB3": 6
+  },
+  "wholesomeyum.com": {
+    "IAB8": 6,
+    "IAB7": 6
+  },
+  "healthyrecipesblogs.com": {
+    "IAB8": 6,
+    "IAB7": 6,
+    "IAB3": 6
+  },
+  "aspicyperspective.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "mtggoldfish.com": {
+    "IAB1": 6,
+    "IAB15": 6
+  },
+  "hughesnet.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB11": 6
+  },
+  "fox13now.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "precincttv.com": {
+    "IAB1": 6
+  },
+  "nj1015.com": {
+    "IAB12": 6,
+    "IAB1": 6,
+    "IAB11": 6
+  },
+  "puzzlebaron.com": {
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "theperspective.com": {
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "broadwayworld.com": {
+    "IAB1": 6,
+    "IAB22": 6,
+    "IAB12": 6
+  },
+  "mommypoppins.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "travelawaits.com": {
+    "IAB20": 6,
+    "IAB1": 6,
+    "IAB14": 6
+  },
+  "eldiariony.com": {
+    "IAB12": 6,
+    "IAB14": 6,
+    "IAB1": 6
+  },
+  "bismanonline.com": {
+    "IAB22": 6,
+    "IAB2": 6,
+    "IAB3": 6
+  },
+  "thoughtcatalog.com": {
+    "IAB14": 6,
+    "IAB1": 6,
+    "IAB5": 6
+  },
+  "peopleenespanol.com": {
+    "IAB1": 6,
+    "IAB7": 6
+  },
+  "momontimeout.com": {
+    "IAB8": 6,
+    "IAB3": 6,
+    "IAB1": 6
+  },
+  "kentucky.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB7": 6
+  },
+  "diethood.com": {
+    "IAB8": 6,
+    "IAB7": 6,
+    "IAB1": 6
+  },
+  "wptv.com": {
+    "IAB12": 6,
+    "IAB11": 6,
+    "IAB14": 6
+  },
+  "mobileposse.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "chess.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "top5.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "wordhippo.com": {
+    "IAB4": 4,
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "sportzbonanza.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "freegames.org": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "kaleandcardio.com": {
+    "IAB7": 4,
+    "IAB8": 4
+  },
+  "diez.hn": {
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "gizmodo.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "icd10data.com": {
+    "IAB7": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "rvtrader.com": {
+    "IAB2": 4,
+    "IAB3": 4,
+    "IAB22": 4
+  },
+  "marca.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB17": 4
+  },
+  "yachtworld.com": {
+    "IAB2": 4,
+    "IAB20": 4
+  },
+  "armstrongmywire.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB19": 4
+  },
+  "curseforge.com": {
+    "IAB1": 4
+  },
+  "mobafire.com": {
+    "IAB1": 4
+  },
+  "omgcheckitout.com": {
+    "IAB7": 4,
+    "IAB5": 4,
+    "IAB16": 4
+  },
+  "fark.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "petapixel.com": {
+    "IAB1": 4,
+    "IAB9": 4,
+    "IAB15": 4
+  },
+  "ballercap.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "discovery.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB9": 4
+  },
+  "laopinion.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "blackenterprise.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "whatculture.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "eatingonadime.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB5": 4
+  },
+  "ourlads.com": {
+    "IAB12": 4,
+    "IAB22": 4
+  },
+  "someecards.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "tripstodiscover.com": {
+    "IAB20": 4,
+    "IAB21": 4,
+    "IAB5": 4
+  },
+  "gimmedelicious.com": {
+    "IAB8": 4,
+    "IAB7": 4,
+    "IAB3": 4
+  },
+  "psychicmonday.com": {
+    "IAB1": 4,
+    "IAB7": 4
+  },
+  "spicysouthernkitchen.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB1": 4
+  },
+  "honda-tech.com": {
+    "IAB2": 4,
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "themarysue.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "fox17online.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "fitfoodiefinds.com": {
+    "IAB8": 4,
+    "IAB7": 4,
+    "IAB1": 4
+  },
+  "weatherforyou.com": {
+    "IAB12": 4,
+    "IAB20": 4,
+    "IAB15": 4
+  },
+  "timerminutes.com": {
+    "IAB19": 4,
+    "IAB9": 4,
+    "IAB15": 4
+  },
+  "askinglot.com": {
+    "IAB5": 4,
+    "IAB3": 4,
+    "IAB10": 4
+  },
+  "tiparents.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB9": 4
+  },
+  "theamericanconservative.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "wikifeet.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "pokemondb.net": {
+    "IAB1": 4
+  },
+  "insp.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "worldsurfleague.com": {
+    "IAB17": 4,
+    "IAB9": 4,
+    "IAB22": 4
+  },
+  "bigbrothernetwork.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "time.is": {
+    "IAB5": 4,
+    "IAB19": 4
+  },
+  "thehollywoodgossip.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "goodto.com": {
+    "IAB7": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "segmentnext.com": {
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "metacritic.com": {
+    "IAB1": 4,
+    "IAB22": 4
+  },
+  "gamepur.com": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "yardsalesearch.com": {
+    "IAB22": 4,
+    "IAB3": 4,
+    "IAB1": 4
+  },
+  "gmx.com": {
+    "IAB19": 4,
+    "IAB1": 4
+  },
+  "insidelacrosse.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "belloflostsouls.net": {
+    "IAB1": 4,
+    "IAB22": 4
+  },
+  "daily-choices.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "wenxuecity.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB5": 4
+  },
+  "coolmathgames.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "centurylink.net": {
+    "IAB19": 4,
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "truepeoplesearch.com": {
+    "IAB19": 4,
+    "IAB14": 4,
+    "IAB5": 4
+  },
+  "rent.com": {
+    "IAB21": 4,
+    "IAB20": 4,
+    "IAB14": 4
+  },
+  "icy-veins.com": {
+    "IAB1": 4
+  },
+  "warcraftlogs.com": {
+    "IAB1": 4
+  },
+  "bleedingcool.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB22": 4
+  },
+  "websudoku.com": {
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "heywise.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "pof.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB19": 4
+  },
+  "bolavip.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "jigsawexplorer.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "yellowpages.com": {
+    "IAB5": 4,
+    "IAB3": 4,
+    "IAB22": 4
+  },
+  "sohu.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB19": 4
+  },
+  "imleagues.com": {
+    "IAB17": 4,
+    "IAB4": 4,
+    "IAB7": 4
+  },
+  "247freecell.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "glassdoor.com": {
+    "IAB4": 4,
+    "IAB3": 4,
+    "IAB15": 4
+  },
+  "wordfind.com": {
+    "IAB1": 4,
+    "IAB4": 4,
+    "IAB3": 4
+  },
+  "wdrb.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "11alive.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "khou.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "247sudoku.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "spaghettimodels.com": {
+    "IAB5": 4
+  },
+  "tigernet.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB22": 4
+  },
+  "georgetakei.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "chosun.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "filgoal.com": {
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "democraticunderground.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "gamewith.net": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "neopets.com": {
+    "IAB1": 4
+  },
+  "tarot.com": {
+    "IAB1": 4
+  },
+  "freemahjong.org": {
+    "IAB5": 4
+  },
+  "proprofs.com": {
+    "IAB4": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "reverso.net": {
+    "IAB5": 4,
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "programiz.com": {
+    "IAB19": 4,
+    "IAB5": 4
+  },
+  "uscellular.com": {
+    "IAB19": 4,
+    "IAB1": 4
+  },
+  "freekibble.com": {
+    "IAB1": 4,
+    "IAB9": 4,
+    "IAB16": 4
+  },
+  "famousbirthdays.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "rpgsite.net": {
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "247wordsearch.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "typingtest.com": {
+    "IAB5": 4
+  },
+  "thegrio.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "wimp.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "4thofjulysolitaire.com": {
+    "IAB1": 4
+  },
+  "wineverygame.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "redbox.com": {
+    "IAB1": 4,
+    "IAB22": 4,
+    "IAB19": 4
+  },
+  "gasbuddy.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB3": 4
+  },
+  "terra.com.mx": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "fextralife.com": {
+    "IAB1": 4
+  },
+  "wowhead.com": {
+    "IAB1": 4
+  },
+  "moneymade.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB11": 4
+  },
+  "rawstory.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "usssa.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "247mirror.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "noteabley.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "lawinsider.com": {
+    "IAB11": 4,
+    "IAB5": 4,
+    "IAB13": 4
+  },
+  "5e.tools": {
+    "IAB1": 4
+  },
+  "corvetteblogger.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB1": 4
+  },
+  "zimbio.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "prensalibre.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "rolimons.com": {
+    "IAB1": 4
+  },
+  "kevin.games": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "teamsnap.com": {
+    "IAB3": 4,
+    "IAB19": 4,
+    "IAB17": 4
+  },
+  "textfree.us": {
+    "IAB19": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "wwaytv3.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "lemonde.fr": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "ijr.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "joebucsfan.com": {
+    "IAB12": 4,
+    "IAB22": 4
+  },
+  "zombsroyale.io": {
+    "IAB1": 4
+  },
+  "ifoodreal.com": {
+    "IAB8": 4,
+    "IAB7": 4,
+    "IAB3": 4
+  },
+  "diariolibre.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "healthygeorge.com": {
+    "IAB7": 4,
+    "IAB1": 4
+  },
+  "bigblueinteractive.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB22": 4
+  },
+  "knowyourmeme.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "iwastesomuchtime.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "phantasytour.com": {
+    "IAB1": 4,
+    "IAB22": 4
+  },
+  "skyscanner.com": {
+    "IAB20": 4,
+    "IAB3": 4,
+    "IAB2": 4
+  },
+  "goodgamestudios.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "parentinfluence.com": {
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "mejoress.com": {
+    "IAB1": 4,
+    "IAB22": 4
+  },
+  "bigglobaltravel.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "grizly.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB5": 4
+  },
+  "healthygem.com": {
+    "IAB7": 4,
+    "IAB5": 4
+  },
+  "absolutehistory.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "synacor.com": {
+    "IAB19": 4
+  },
+  "animalchannel.co": {
+    "IAB9": 4,
+    "IAB1": 4
+  },
+  "stockcharts.com": {
+    "IAB3": 4
+  },
+  "plainchicken.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB1": 4
+  },
+  "metaspoon.com": {
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "amomama.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "thefw.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "lakersdaily.com": {
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "urbanaunty.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "tigerdroppings.com": {
+    "IAB12": 4,
+    "IAB17": 4,
+    "IAB1": 4
+  },
+  "workandmoney.com": {
+    "IAB1": 4,
+    "IAB22": 4,
+    "IAB3": 4
+  },
+  "coachmag.co.uk": {
+    "IAB7": 4,
+    "IAB17": 4
+  },
+  "f150forum.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB5": 4
+  },
+  "flamingoof.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "cardgamesolitaire.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "corvetteforum.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB1": 4
+  },
+  "dealsofamerica.com": {
+    "IAB22": 4,
+    "IAB3": 4,
+    "IAB9": 4
+  },
+  "solitairetime.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "jamaicaobserver.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "tractorbynet.com": {
+    "IAB3": 4,
+    "IAB2": 4,
+    "IAB10": 4
+  },
+  "realitytea.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "ria.com": {
+    "IAB2": 4,
+    "IAB22": 4
+  },
+  "lovewhatmatters.com": {
+    "IAB14": 4,
+    "IAB7": 4,
+    "IAB11": 4
+  },
+  "allhiphop.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "desafiomundial.com": {
+    "IAB14": 4,
+    "IAB12": 4,
+    "IAB9": 4
+  },
+  "allnurses.com": {
+    "IAB7": 4,
+    "IAB4": 4,
+    "IAB3": 4
+  },
+  "247spidersolitaire.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "thegrizzled.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "whythese.com": {
+    "IAB1": 4,
+    "IAB3": 4
+  },
+  "bonk.io": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "schoolspring.com": {
+    "IAB4": 4,
+    "IAB3": 4,
+    "IAB11": 4
+  },
+  "suddenlink.net": {
+    "IAB1": 4,
+    "IAB19": 4,
+    "IAB12": 4
+  },
+  "reallifediy.com": {
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "hiddenobjectgames.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "scrabblecheat.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "fedsmith.com": {
+    "IAB14": 4,
+    "IAB11": 4,
+    "IAB3": 4
+  },
+  "scenenews.com": {
+    "IAB8": 4,
+    "IAB1": 4
+  },
+  "wkrg.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "iheartdogs.com": {
+    "IAB9": 4,
+    "IAB16": 4,
+    "IAB14": 4
+  },
+  "themeparktourist.com": {
+    "IAB20": 4,
+    "IAB16": 4,
+    "IAB9": 4
+  },
+  "afamilyfeast.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB7": 4
+  },
+  "fox61.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB15": 4
+  },
+  "graduatez.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "historycollection.com": {
+    "IAB5": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "mtgazone.com": {
+    "IAB1": 4,
+    "IAB15": 4
+  },
+  "studylight.org": {
+    "IAB14": 4,
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "insidethemagic.net": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB9": 4
+  },
+  "myhealthgazette.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "poki.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "thefashionball.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "huaren.us": {
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "netzero.net": {
+    "IAB19": 4,
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "dailybee.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "247mahjong.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "culturess.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "picksandparlays.net": {
+    "IAB1": 4,
+    "IAB17": 4
+  },
+  "sherdog.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "kotaku.com": {
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "greatandhra.com": {
+    "IAB14": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "pep.ph": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "whowhatwear.com": {
+    "IAB7": 4,
+    "IAB22": 4,
+    "IAB14": 4
+  },
+  "tvshowsace.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "revolt.tv": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "conservativeinstitute.org": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "ladbible.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "bouncetv.com": {
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "thewordfinder.com": {
+    "IAB4": 4,
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "sports-reference.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "classicreload.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "hashtagchatter.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "illumeably.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "protoolreviews.com": {
+    "IAB10": 4,
+    "IAB3": 4,
+    "IAB22": 4
+  },
+  "tamaratattles.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "whec.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "shadowandact.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "supercheats.com": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "koreaboo.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "picrew.me": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "missyusa.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "op.gg": {
+    "IAB1": 4
+  },
+  "247solitaire.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "juno.com": {
+    "IAB19": 4,
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "solitairebliss.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "gamebanana.com": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "yourtango.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "moneyversed.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "timesofindia.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "timesofisrael.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "ndtv.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "dadpatrol.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "netronline.com": {
+    "IAB5": 4,
+    "IAB11": 4,
+    "IAB21": 4
+  },
+  "wpctrends.com": {
+    "IAB7": 4,
+    "IAB22": 4,
+    "IAB14": 4
+  },
+  "math-aids.com": {
+    "IAB5": 4
+  },
+  "news18.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "yeahmotor.com": {
+    "IAB1": 4,
+    "IAB3": 4,
+    "IAB8": 4
+  },
+  "loteriasdominicanas.com": {
+    "IAB1": 4
+  },
+  "onegreenplanet.org": {
+    "IAB8": 4,
+    "IAB7": 4,
+    "IAB9": 4
+  },
+  "game8.co": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "villages-news.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "fabcrunch.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "gamepress.gg": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "guru99.com": {
+    "IAB19": 4,
+    "IAB15": 4,
+    "IAB3": 4
+  },
+  "buzzworthy.com": {
+    "IAB14": 4,
+    "IAB9": 4,
+    "IAB15": 4
+  },
+  "colorized.com": {
+    "IAB1": 4,
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "xxlmag.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "nameberry.com": {
+    "IAB14": 4,
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "fortnitetracker.com": {
+    "IAB1": 4,
+    "IAB17": 4
+  },
+  "10news.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "theappear.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB22": 4
+  },
+  "wweek.com": {
+    "IAB11": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "metasrc.com": {
+    "IAB1": 4
+  },
+  "ezgif.com": {
+    "IAB19": 4,
+    "IAB1": 4
+  },
+  "narcity.com": {
+    "IAB1": 4,
+    "IAB20": 4,
+    "IAB5": 4
+  },
+  "whats-on-netflix.com": {
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "beeradvocate.com": {
+    "IAB8": 4,
+    "IAB22": 4,
+    "IAB12": 4
+  },
+  "laprensagrafica.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "theshaderoom.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "lifestylelatino.com": {
+    "IAB7": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "anandabazar.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "factable.com": {
+    "IAB1": 4,
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "superherohype.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB22": 4
+  },
+  "elconfidencial.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "wate.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "roomrecess.com": {
+    "IAB1": 4,
+    "IAB5": 4,
+    "IAB4": 4
+  },
+  "canesinsight.com": {
+    "IAB12": 4,
+    "IAB17": 4,
+    "IAB1": 4
+  },
+  "astrologyzone.com": {
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "scrabble-solver.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "drafttek.com": {
+    "IAB17": 4,
+    "IAB22": 4,
+    "IAB12": 4
+  },
+  "nwdb.info": {
+    "IAB1": 4
+  },
+  "soapoperaspy.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "attackofthefanboy.com": {
+    "IAB1": 4,
+    "IAB15": 4
+  },
+  "sharingsmiles.co": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "conectate.com.do": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB17": 4
+  },
+  "creaders.net": {
+    "IAB12": 4,
+    "IAB19": 4,
+    "IAB15": 4
+  },
+  "floor8.com": {
+    "IAB19": 4,
+    "IAB3": 4
+  },
+  "relativelyinteresting.com": {
+    "IAB1": 4,
+    "IAB3": 4,
+    "IAB14": 4
+  },
+  "9gag.com": {
+    "IAB1": 4
+  },
+  "parentsdome.com": {
+    "IAB1": 4,
+    "IAB9": 4,
+    "IAB20": 4
+  },
+  "thedelite.com": {
+    "IAB3": 4,
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "hdforums.com": {
+    "IAB2": 4,
+    "IAB17": 4,
+    "IAB5": 4
+  },
+  "worldofsolitaire.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "tvtropes.org": {
+    "IAB1": 4
+  },
+  "colonist.io": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "ahoramismo.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB11": 4
+  },
+  "everydaykoala.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "gomiblog.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "247spades.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "hindustantimes.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "kenkenpuzzle.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "yourdailysportfix.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB12": 4
+  },
+  "boingboing.net": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "convertunits.com": {
+    "IAB5": 4,
+    "IAB15": 4,
+    "IAB3": 4
+  },
+  "cardgamespidersolitaire.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "findagrave.com": {
+    "IAB5": 4,
+    "IAB11": 4,
+    "IAB21": 4
+  },
+  "fastpeoplesearch.com": {
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "wkbn.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "danslescoulisses.com": {
+    "IAB17": 4
+  },
+  "worldpopulationreview.com": {
+    "IAB14": 4,
+    "IAB5": 4,
+    "IAB11": 4
+  },
+  "namemc.com": {
+    "IAB1": 4
+  },
+  "powerball.com": {
+    "IAB1": 4
+  },
+  "refdesk.com": {
+    "IAB11": 4,
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "1point3acres.com": {
+    "IAB1": 4,
+    "IAB4": 4,
+    "IAB3": 4
+  },
+  "bestcrosswords.com": {
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "channel3000.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "mbworld.org": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB1": 4
+  },
+  "surfchex.com": {
+    "IAB9": 4,
+    "IAB17": 4,
+    "IAB12": 4
+  },
+  "wavy.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "lyricsondemand.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB19": 4
+  },
+  "typingclub.com": {
+    "IAB4": 4,
+    "IAB5": 4,
+    "IAB19": 4
+  },
+  "cleantechnica.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB3": 4
+  },
+  "wmgk.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB19": 4
+  },
+  "whatismyipaddress.com": {
+    "IAB19": 4,
+    "IAB3": 4
+  },
+  "khaleejtimes.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "eluniverso.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "wane.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "elheraldo.hn": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "searchpeoplefree.com": {
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "uscreditcardguide.com": {
+    "IAB13": 4,
+    "IAB3": 4,
+    "IAB22": 4
+  },
+  "whnt.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "dailythemedcrosswordanswers.com": {
+    "IAB1": 4,
+    "IAB5": 4,
+    "IAB4": 4
+  },
+  "warhistoryonline.com": {
+    "IAB11": 4,
+    "IAB5": 4,
+    "IAB3": 4
+  },
+  "las2orillas.co": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB7": 4
+  },
+  "eventhubs.com": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "byowner.com": {
+    "IAB21": 4,
+    "IAB20": 4,
+    "IAB2": 4
+  },
+  "oola.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB8": 4
+  },
+  "looper.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "travelerdoor.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "drivepedia.com": {
+    "IAB1": 4,
+    "IAB20": 4,
+    "IAB3": 4
+  },
+  "hometalk.com": {
+    "IAB10": 4,
+    "IAB5": 4,
+    "IAB3": 4
+  },
+  "instantlymodern.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "thesun.co.uk": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "toofab.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "mercurynews.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "easybib.com": {
+    "IAB3": 4,
+    "IAB5": 4,
+    "IAB4": 4
+  },
+  "grunge.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "javatpoint.com": {
+    "IAB19": 4,
+    "IAB15": 4,
+    "IAB5": 4
+  },
+  "mydailymagazine.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "brainly.com": {
+    "IAB5": 4,
+    "IAB4": 4,
+    "IAB15": 4
+  },
+  "symbaloo.com": {
+    "IAB19": 4,
+    "IAB1": 4
+  },
+  "thisvsthat.org": {
+    "IAB1": 4,
+    "IAB3": 4,
+    "IAB14": 4
+  },
+  "titantv.com": {
+    "IAB1": 4
+  },
+  "nitrotype.com": {
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "nationaldaycalendar.com": {
+    "IAB9": 4,
+    "IAB14": 4,
+    "IAB5": 4
+  },
+  "pinchofyum.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB7": 4
+  },
+  "shellshock.io": {
+    "IAB1": 4,
+    "IAB19": 4
+  },
+  "rd.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "cashroadster.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "femanin.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "donga.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "brightside.me": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB5": 4
+  },
+  "solitaireparadise.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "247checkers.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "historicalgenius.com": {
+    "IAB1": 4,
+    "IAB5": 4,
+    "IAB14": 4
+  },
+  "mumsnet.com": {
+    "IAB14": 4,
+    "IAB7": 4,
+    "IAB12": 4
+  },
+  "beautifultrendstoday.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "planetminecraft.com": {
+    "IAB1": 4
+  },
+  "chineseinla.com": {
+    "IAB14": 4,
+    "IAB3": 4,
+    "IAB4": 4
+  },
+  "milenio.com": {
+    "IAB12": 4,
+    "IAB14": 4,
+    "IAB11": 4
+  },
+  "eurweb.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "historictalk.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "telehealthdave.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB7": 4
+  },
+  "flightview.com": {
+    "IAB20": 4,
+    "IAB3": 4,
+    "IAB19": 4
+  },
+  "newsy.com": {
+    "IAB11": 4,
+    "IAB7": 4,
+    "IAB20": 4
+  },
+  "mocospace.com": {
+    "IAB1": 4,
+    "IAB19": 4,
+    "IAB14": 4
+  },
+  "notebookcheck.net": {
+    "IAB19": 4,
+    "IAB22": 4
+  },
+  "minq.com": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB7": 4
+  },
+  "twinfinite.net": {
+    "IAB1": 4
+  },
+  "dolldivine.com": {
+    "IAB1": 4,
+    "IAB4": 4
+  },
+  "theydiffer.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "lovebscott.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "filmibeat.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "pushsquare.com": {
+    "IAB1": 4,
+    "IAB19": 4,
+    "IAB22": 4
+  },
+  "futbolete.com": {
+    "IAB1": 4,
+    "IAB9": 4,
+    "IAB2": 4
+  },
+  "parentingisnteasy.co": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB7": 4
+  },
+  "bubbleshooter.net": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "newschannel5.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB1": 4
+  },
+  "sweetandsavory.co": {
+    "IAB8": 4,
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "sportspyder.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "wowway.net": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB19": 4
+  },
+  "gm-trucks.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB5": 4
+  },
+  "raider.io": {
+    "IAB1": 4
+  },
+  "prosportsdaily.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "familyeducation.com": {
+    "IAB14": 4,
+    "IAB5": 4,
+    "IAB1": 4
+  },
+  "noticel.com": {
+    "IAB12": 4,
+    "IAB11": 4,
+    "IAB14": 4
+  },
+  "oyster.com": {
+    "IAB20": 4,
+    "IAB22": 4,
+    "IAB21": 4
+  },
+  "play2048.co": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "myincrediblerecipes.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB7": 4
+  },
+  "luxurlist.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB12": 4
+  },
+  "listenonrepeat.com": {
+    "IAB1": 4,
+    "IAB19": 4,
+    "IAB14": 4
+  },
+  "musicoholics.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB14": 4
+  },
+  "bleepingcomputer.com": {
+    "IAB19": 4,
+    "IAB15": 4,
+    "IAB12": 4
+  },
+  "misspennystocks.com": {
+    "IAB1": 4,
+    "IAB12": 4,
+    "IAB7": 4
+  },
+  "yellowblissroad.com": {
+    "IAB8": 4,
+    "IAB7": 4,
+    "IAB3": 4
+  },
+  "encyclopedia.com": {
+    "IAB5": 4,
+    "IAB14": 4,
+    "IAB1": 4
+  },
+  "zkillboard.com": {
+    "IAB1": 4
+  },
+  "juliasalbum.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB1": 4
+  },
+  "clublexus.com": {
+    "IAB2": 4,
+    "IAB22": 4,
+    "IAB5": 4
+  },
+  "blavity.com": {
+    "IAB12": 4,
+    "IAB1": 4,
+    "IAB7": 4
+  },
+  "iheartnaptime.net": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB5": 4
+  },
+  "nodq.com": {
+    "IAB17": 4,
+    "IAB12": 4,
+    "IAB1": 4
+  },
+  "thenest.com": {
+    "IAB14": 4,
+    "IAB3": 4,
+    "IAB5": 4
+  },
+  "allakhazam.com": {
+    "IAB1": 4
+  },
+  "delishably.com": {
+    "IAB8": 4,
+    "IAB3": 4,
+    "IAB5": 4
+  },
+  "tastyarea.com": {
+    "IAB1": 4,
+    "IAB3": 4,
+    "IAB14": 4
+  },
+  "travlerz.com": {
+    "IAB1": 4,
+    "IAB14": 4
+  },
+  "names.org": {
+    "IAB14": 4,
+    "IAB1": 4,
+    "IAB5": 4
+  },
+  "bibme.org": {
+    "IAB5": 4,
+    "IAB14": 4,
+    "IAB3": 4
+  },
+  "defused.com": {
+    "IAB1": 4,
+    "IAB14": 4,
+    "IAB9": 4
+  },
+  "daily-stuff.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "earthlink.net": {
+    "IAB19": 2,
+    "IAB1": 2
+  },
+  "bridesblush.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "indiatimes.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "radiokorea.com": {
+    "IAB12": 2,
+    "IAB3": 2,
+    "IAB1": 2
+  },
+  "marketscreener.com": {
+    "IAB3": 2,
+    "IAB12": 2,
+    "IAB13": 2
+  },
+  "addictinggames.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "pro-football-reference.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "hsn.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "manta.com": {
+    "IAB5": 2,
+    "IAB3": 2,
+    "IAB22": 2
+  },
+  "infobae.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB1": 2
+  },
+  "tftactics.gg": {
+    "IAB1": 2
+  },
+  "diply.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "pixlr.com": {
+    "IAB1": 2
+  },
+  "rentals.com": {
+    "IAB21": 2,
+    "IAB20": 2,
+    "IAB4": 2
+  },
+  "populareverything.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "farandwide.com": {
+    "IAB20": 2,
+    "IAB5": 2,
+    "IAB3": 2
+  },
+  "eonline.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB7": 2
+  },
+  "fiveo.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "sigalert.com": {
+    "IAB20": 2,
+    "IAB2": 2,
+    "IAB11": 2
+  },
+  "signup.com": {
+    "IAB4": 2,
+    "IAB14": 2,
+    "IAB5": 2
+  },
+  "elcomercio.pe": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB1": 2
+  },
+  "bartleby.com": {
+    "IAB5": 2,
+    "IAB14": 2,
+    "IAB1": 2
+  },
+  "elmundo.es": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "kurir.rs": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "mahjong.com": {
+    "IAB1": 2,
+    "IAB4": 2
+  },
+  "historybyday.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "manhwaz.com": {
+    "IAB1": 2,
+    "IAB22": 2
+  },
+  "zimad.com": {
+    "IAB1": 2
+  },
+  "dealmoon.com": {
+    "IAB22": 2,
+    "IAB19": 2,
+    "IAB3": 2
+  },
+  "vix.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "listindiario.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "journaldemontreal.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "lexulous.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "facebook.com": {
+    "IAB19": 2,
+    "IAB1": 2,
+    "IAB4": 2
+  },
+  "backchina.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "247bridge.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "247hearts.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "bestofsenior.com": {
+    "IAB14": 2,
+    "IAB1": 2,
+    "IAB12": 2
+  },
+  "nguoi-viet.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "ultranovelast.com": {
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "journaldequebec.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "fox6now.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB1": 2
+  },
+  "ap.org": {
+    "IAB12": 2,
+    "IAB17": 2,
+    "IAB8": 2
+  },
+  "omnitalk.com": {
+    "IAB19": 2
+  },
+  "chicksonright.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "therocketsscience.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "chipchick.com": {
+    "IAB14": 2,
+    "IAB12": 2,
+    "IAB11": 2
+  },
+  "newsmemory.com": {
+    "IAB3": 2,
+    "IAB12": 2,
+    "IAB11": 2
+  },
+  "wildtangent.com": {
+    "IAB1": 2,
+    "IAB5": 2
+  },
+  "solitaire.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB4": 2
+  },
+  "canoodlesoup.com": {
+    "IAB1": 2,
+    "IAB12": 2
+  },
+  "fizzsy.com": {
+    "IAB8": 2,
+    "IAB3": 2,
+    "IAB1": 2
+  },
+  "leaguelineup.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "maternityweek.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB9": 2
+  },
+  "askamanager.org": {
+    "IAB3": 2,
+    "IAB14": 2,
+    "IAB7": 2
+  },
+  "monstersandcritics.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB7": 2
+  },
+  "tettybetty.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB7": 2
+  },
+  "shockwave.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "playspades-online.com": {
+    "IAB1": 2
+  },
+  "trontv.com": {
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "financialadvisorheroes.com": {
+    "IAB1": 2,
+    "IAB7": 2
+  },
+  "worldjournal.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "spotlightstories.co": {
+    "IAB14": 2,
+    "IAB1": 2,
+    "IAB9": 2
+  },
+  "honesttopaws.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "femmeactuelle.fr": {
+    "IAB7": 2
+  },
+  "scribol.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB9": 2
+  },
+  "manoramaonline.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "linguee.fr": {
+    "IAB3": 2
+  },
+  "philstar.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB1": 2
+  },
+  "geeksaresexy.net": {
+    "IAB15": 2,
+    "IAB19": 2,
+    "IAB9": 2
+  },
+  "pokemonshowdown.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "thefamouspeople.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "fleaflicker.com": {
+    "IAB17": 2,
+    "IAB1": 2
+  },
+  "chunkbase.com": {
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "broadcastify.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB19": 2
+  },
+  "realoem.com": {
+    "IAB2": 2,
+    "IAB22": 2,
+    "IAB19": 2
+  },
+  "fox10phoenix.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "dinarrecaps.com": {
+    "IAB13": 2,
+    "IAB12": 2,
+    "IAB3": 2
+  },
+  "christmas-solitaire.com": {
+    "IAB1": 2
+  },
+  "pch.com": {
+    "IAB1": 2,
+    "IAB9": 2
+  },
+  "thesportster.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "visualchase.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "classmates.com": {
+    "IAB4": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "fanatics.com": {
+    "IAB22": 2,
+    "IAB12": 2
+  },
+  "slashfilm.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB9": 2
+  },
+  "thewindowsclub.com": {
+    "IAB19": 2,
+    "IAB5": 2,
+    "IAB15": 2
+  },
+  "match.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "247backgammon.org": {
+    "IAB1": 2,
+    "IAB5": 2
+  },
+  "comicbookmovie.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB9": 2
+  },
+  "pupabc.com": {
+    "IAB14": 2,
+    "IAB1": 2,
+    "IAB9": 2
+  },
+  "groupon.com": {
+    "IAB22": 2,
+    "IAB9": 2,
+    "IAB3": 2
+  },
+  "nme.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "gala.fr": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB11": 2
+  },
+  "westeros.org": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "seterra.com": {
+    "IAB1": 2,
+    "IAB3": 2,
+    "IAB19": 2
+  },
+  "hockeybuzz.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "chinatimes.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "theessentialbs.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB7": 2
+  },
+  "history101.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB5": 2
+  },
+  "soo-healthy.com": {
+    "IAB7": 2,
+    "IAB14": 2,
+    "IAB1": 2
+  },
+  "mentalflare.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "nextrefinance.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "findanyanswer.com": {
+    "IAB5": 2,
+    "IAB3": 2,
+    "IAB10": 2
+  },
+  "worldlifestyle.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "xfinity.com": {
+    "IAB19": 2,
+    "IAB1": 2
+  },
+  "textnow.com": {
+    "IAB19": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "livestly.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB5": 2
+  },
+  "kueez.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "doodle.com": {
+    "IAB19": 2,
+    "IAB3": 2
+  },
+  "inquirer.net": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "fantrax.com": {
+    "IAB17": 2,
+    "IAB1": 2
+  },
+  "record.com.mx": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "issuu.com": {
+    "IAB3": 2,
+    "IAB14": 2,
+    "IAB4": 2
+  },
+  "as.com": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB17": 2
+  },
+  "udn.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "elnuevodia.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "cincinnatibell.net": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "meteomedia.com": {
+    "IAB12": 2
+  },
+  "tastemade.com": {
+    "IAB8": 2
+  },
+  "theecofeed.com": {
+    "IAB5": 2,
+    "IAB10": 2,
+    "IAB1": 2
+  },
+  "dinamalar.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "earnspendlive.com": {
+    "IAB1": 2,
+    "IAB3": 2,
+    "IAB14": 2
+  },
+  "lapatilla.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "ynet.co.il": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "odometer.com": {
+    "IAB2": 2,
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "celebdirtylaundry.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB7": 2
+  },
+  "indianexpress.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "hypegalore.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "worldstarhiphop.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "smalltownwoman.com": {
+    "IAB8": 2,
+    "IAB3": 2,
+    "IAB5": 2
+  },
+  "sofifa.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "telemundo.com": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "interesticle.com": {
+    "IAB9": 2,
+    "IAB5": 2,
+    "IAB3": 2
+  },
+  "news12.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB7": 2
+  },
+  "cheapoair.com": {
+    "IAB20": 2,
+    "IAB3": 2
+  },
+  "seneweb.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "wp.pl": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB17": 2
+  },
+  "eintaxid.com": {
+    "IAB5": 2,
+    "IAB13": 2,
+    "IAB21": 2
+  },
+  "wapa.tv": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB11": 2
+  },
+  "xda-developers.com": {
+    "IAB19": 2,
+    "IAB5": 2
+  },
+  "capfriendly.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "thekrazycouponlady.com": {
+    "IAB22": 2,
+    "IAB3": 2,
+    "IAB9": 2
+  },
+  "laprensa.hn": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "wago.io": {
+    "IAB1": 2
+  },
+  "wehavekids.com": {
+    "IAB14": 2,
+    "IAB7": 2,
+    "IAB5": 2
+  },
+  "andhrajyothy.com": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "itsfoss.com": {
+    "IAB19": 2,
+    "IAB5": 2,
+    "IAB15": 2
+  },
+  "inews.co.uk": {
+    "IAB12": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "refinancegold.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB7": 2
+  },
+  "affordablehousingonline.com": {
+    "IAB21": 2,
+    "IAB14": 2,
+    "IAB11": 2
+  },
+  "thescottishsun.co.uk": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "cozi.com": {
+    "IAB19": 2,
+    "IAB14": 2,
+    "IAB10": 2
+  },
+  "baeldung.com": {
+    "IAB19": 2,
+    "IAB15": 2,
+    "IAB5": 2
+  },
+  "mmo-champion.com": {
+    "IAB1": 2
+  },
+  "biblestudytools.com": {
+    "IAB14": 2,
+    "IAB5": 2,
+    "IAB1": 2
+  },
+  "dmv-written-test.com": {
+    "IAB4": 2,
+    "IAB2": 2
+  },
+  "tomandlorenzo.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB7": 2
+  },
+  "metruyenchu.com": {
+    "IAB1": 2,
+    "IAB22": 2
+  },
+  "iwashyoudry.com": {
+    "IAB8": 2,
+    "IAB3": 2,
+    "IAB5": 2
+  },
+  "wsoctv.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB1": 2
+  },
+  "thenation.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "venturebeat.com": {
+    "IAB19": 2,
+    "IAB12": 2,
+    "IAB15": 2
+  },
+  "ukr.net": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "flightrising.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "lotteryusa.com": {
+    "IAB1": 2,
+    "IAB11": 2,
+    "IAB5": 2
+  },
+  "freeridegames.com": {
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "sport.es": {
+    "IAB17": 2,
+    "IAB1": 2
+  },
+  "dailystar.co.uk": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "eternallysunny.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "geeksforgeeks.org": {
+    "IAB15": 2,
+    "IAB19": 2,
+    "IAB5": 2
+  },
+  "nationalworld.com": {
+    "IAB11": 2,
+    "IAB15": 2,
+    "IAB1": 2
+  },
+  "younghollywood.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "playjunkie.com": {
+    "IAB1": 2,
+    "IAB3": 2,
+    "IAB8": 2
+  },
+  "eliteprospects.com": {
+    "IAB12": 2,
+    "IAB1": 2
+  },
+  "tsn.ua": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "stadiumtalk.com": {
+    "IAB17": 2,
+    "IAB12": 2,
+    "IAB4": 2
+  },
+  "clarin.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "ebay.ca": {
+    "IAB22": 2,
+    "IAB1": 2,
+    "IAB19": 2
+  },
+  "digitalspy.com": {
+    "IAB1": 2,
+    "IAB12": 2,
+    "IAB14": 2
+  },
+  "eltiempo.com": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB14": 2
+  },
+  "match3games.com": {
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "fantasyfootballcalculator.com": {
+    "IAB17": 2,
+    "IAB1": 2,
+    "IAB22": 2
+  },
+  "collinsdictionary.com": {
+    "IAB5": 2,
+    "IAB1": 2
+  },
+  "dailyrecord.co.uk": {
+    "IAB12": 2,
+    "IAB11": 2,
+    "IAB17": 2
+  },
+  "livenewschat.eu": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB17": 2
+  },
+  "cliqueduplateau.com": {
+    "IAB1": 2
+  },
+  "jagranjosh.com": {
+    "IAB5": 2,
+    "IAB4": 2,
+    "IAB11": 2
+  },
+  "hockey30.com": {
+    "IAB17": 2
+  },
+  "freepik.com": {
+    "IAB1": 2,
+    "IAB3": 2
+  },
+  "d1baseball.com": {
+    "IAB17": 2
+  },
+  "ninjajournalist.com": {
+    "IAB1": 2,
+    "IAB14": 2,
+    "IAB12": 2
+  },
+  "24h.com.vn": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB14": 2
+  },
+  "libero.pe": {
+    "IAB12": 2,
+    "IAB17": 2,
+    "IAB1": 2
+  },
+  "birminghammail.co.uk": {
+    "IAB12": 2,
+    "IAB1": 2,
+    "IAB11": 2
   }
 }

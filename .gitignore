@@ -68,3 +68,5 @@ venv.bak/
 model_weights/
 data/output/
 notebooks/.ipynb_checkpoints
+
+.emb_cache
