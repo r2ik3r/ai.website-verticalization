@@ -151,16 +151,16 @@ repo/
 | content_text   | string | ❌        | Optional      |
 
 ### Predictions JSONL (example)
-```
+```json 
 {
-"website": "cnn.com",
-"geo": "US",
-"categories": [
-{ "id": "IAB12", "label": "News", "prob": 0.98, "score": 10 },
-{ "id": "IAB14", "label": "Society", "prob": 0.76, "score": 8 },
-{ "id": "IAB15", "label": "Science", "prob": 0.65, "score": 7 }
-],
-"generated_at": "2025-08-12T12:00:00Z"
+    "website": "cnn.com",
+    "geo": "US",
+    "categories": [
+        { "id": "IAB12", "label": "News", "prob": 0.98, "score": 10 },
+        { "id": "IAB14", "label": "Society", "prob": 0.76, "score": 8 },
+        { "id": "IAB15", "label": "Science", "prob": 0.65, "score": 7 }
+    ],
+    "generated_at": "2025-08-12T12:00:00Z"
 }
 ```
 
