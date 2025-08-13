@@ -107,26 +107,28 @@ EVAL --> REPORT
 ## 📂 Project Structure
 
 ```
-verticalizer/
+repo/
 ├── pyproject.toml
 ├── README.md
-├── spec.md
+├── docs/
+│   └── spec.md
 ├── CONTRIBUTING.md
 ├── .env.example
-├── src/verticalizer/
-│   ├── cli.py                     # top-level CLI
-│   ├── apps/
-│   │   ├── crawler/{cli.py, service.py, README.md}
-│   │   ├── embedder/{cli.py, service.py, README.md}
-│   │   ├── trainer/{cli.py, service.py, README.md}
-│   │   ├── infer/{cli.py, service.py, README.md}
-│   │   └── evaluate/{cli.py, service.py, README.md}
-│   ├── crawl/                     # fetch, parse, robots
-│   ├── embeddings/                # gemini client + cache
-│   ├── models/                    # keras, calibration, persistence, registry
-│   ├── pipeline/                  # common helpers, nodes (train/infer/eval), io
-│   ├── storage/                   # postgres + s3 clients and repositories
-│   └── utils/                     # logging, taxonomy, metrics, seed
+├── src/
+│   └── verticalizer/
+│      ├── cli.py                     # top-level CLI
+│      ├── apps/
+│      │   ├── crawler/{cli.py, service.py, README.md}
+│      │   ├── embedder/{cli.py, service.py, README.md}
+│      │   ├── trainer/{cli.py, service.py, README.md}
+│      │   ├── infer/{cli.py, service.py, README.md}
+│      │   └── evaluate/{cli.py, service.py, README.md}
+│      ├── crawl/                     # fetch, parse, robots
+│      ├── embeddings/                # gemini client + cache
+│      ├── models/                    # keras, calibration, persistence, registry
+│      ├── pipeline/                  # common helpers, nodes (train/infer/eval), io
+│      ├── storage/                   # postgres + s3 clients and repositories
+│      └── utils/                     # logging, taxonomy, metrics, seed
 └── tests/
 ```
 
