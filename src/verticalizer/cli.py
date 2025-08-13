@@ -5,8 +5,7 @@ from .utils.logging import get_logger
 from .utils.seed import seed_all
 from .pipeline.io import read_table, write_jsonl
 from .pipeline.nodes import train_from_labeled, infer as infer_nodes, evaluate as eval_nodes
-from .models.persistence import save_model, load_model
-from .models.calibration import ProbCalibrator
+from .models.persistence import save_model
 from .apps.crawler.cli import add_crawler_cli, handle_crawler
 from .apps.embedder.cli import add_embedder_cli, handle_embedder
 from .apps.trainer.cli import add_trainer_cli, handle_trainer
@@ -63,7 +62,9 @@ def cmd_run_pipeline(geo: str, excel_path: str, labeled_csv: str, groundtruth_js
     log.info("[PIPE] Step 2: Training...")
     df = read_table(labeled_csv)
     bundle = train_from_labeled(df)
-    _ensure_dir(model_path); _ensure_dir(calib_path); _ensure_dir(report_path)
+    _ensure_dir(model_path)
+    _ensure_dir(calib_path)
+    _ensure_dir(report_path)
     save_model(bundle["model"], model_path)
     bundle["cal"].save(calib_path)
     metrics = eval_nodes(bundle["model"], bundle["cal"], bundle["classes"], df)

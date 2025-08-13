@@ -1,5 +1,6 @@
 from typing import List, Dict, Any
 import orjson
+import json
 import pandas as pd
 from datetime import datetime
 
@@ -18,3 +19,13 @@ def write_jsonl(path: str, rows: List[Dict[str, Any]]):
 
 def now_iso():
     return datetime.utcnow().isoformat() + "Z"
+
+def read_jsonl(path: str):
+    out = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+    out.append(json.loads(line))
+    return out

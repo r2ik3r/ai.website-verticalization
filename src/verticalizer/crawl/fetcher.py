@@ -1,5 +1,4 @@
 import requests
-from urllib.parse import urlparse
 from .robots import robots_allowed, delay, DEFAULT_UA, TIMEOUT
 from .parse import extract_readable_text
 

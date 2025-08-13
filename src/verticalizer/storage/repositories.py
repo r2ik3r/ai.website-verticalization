@@ -1,6 +1,4 @@
-import json
 from typing import Optional, List, Dict
-import sqlalchemy as sa
 from sqlalchemy import text
 from .db import engine
 

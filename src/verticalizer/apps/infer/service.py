@@ -1,8 +1,10 @@
+# src/verticalizer/apps/infer/service.py
 import os
 import pandas as pd
 from ...models.persistence import load_model
 from ...models.calibration import ProbCalibrator
 from ...utils.taxonomy import load_taxonomy
+from ...pipeline.common import prepare_embeddings_for_df
 from ...pipeline.nodes import infer as infer_nodes
 from ...pipeline.io import write_jsonl
 
@@ -12,6 +14,11 @@ def infer_from_csv(in_csv: str, model_path: str, calib_path: str, out_jsonl: str
     id2label, _ = load_taxonomy()
     classes = list(id2label.keys())
     model_obj = load_model(model_path)
-    results = infer_nodes(model_obj, cal, classes, df, topk=topk)
+
+    # NEW: ensure embeddings exist before calling infer_nodes
+    X = prepare_embeddings_for_df(df)
+
+    # Call infer_nodes but pass precomputed X to skip redundant prepare
+    results = infer_nodes(model_obj, cal, classes, df.assign(embedding=list(X)), topk=topk)
     write_jsonl(out_jsonl, results)
     return out_jsonl

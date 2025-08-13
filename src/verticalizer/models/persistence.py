@@ -1,4 +1,3 @@
-from typing import Tuple
 import tensorflow as tf
 
 def save_model(model: tf.keras.Model, path: str):
