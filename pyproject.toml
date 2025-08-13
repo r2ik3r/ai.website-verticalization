@@ -29,6 +29,9 @@ google-genai = "^1.29.0"
 google-api-core = "^2.25.1"
 google-auth = "^2.40.3"
 tqdm = "^4.67.1"
+sqlalchemy = "^2.0.43"
+psycopg2-binary = "^2.9.10"
+boto3 = "^1.40.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
