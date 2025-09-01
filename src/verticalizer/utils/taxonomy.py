@@ -1,3 +1,4 @@
+# src/verticalizer/utils/taxonomy.py
 import json
 import os
 from typing import Dict, List, Tuple

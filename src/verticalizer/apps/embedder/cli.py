@@ -1,3 +1,4 @@
+# src/verticalizer/apps/embedder/cli.py
 def add_embedder_cli(subparsers):
     p = subparsers.add_parser("embed", help="Embed latest crawled text and persist vectors")
     p.add_argument("--model", default="models/text-embedding-004")

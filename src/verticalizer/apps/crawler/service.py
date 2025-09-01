@@ -1,3 +1,4 @@
+# src/verticalizer/apps/crawler/service.py
 import hashlib
 import logging
 from typing import List

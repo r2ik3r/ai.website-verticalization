@@ -1,3 +1,4 @@
+# src/verticalizer/crawl/robots.py
 import time
 from urllib.parse import urljoin, urlparse
 import urllib.robotparser as robotparser

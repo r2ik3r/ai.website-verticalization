@@ -1,3 +1,4 @@
+# src/verticalizer/cli.py
 import argparse
 import os
 import json

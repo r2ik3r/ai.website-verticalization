@@ -1,3 +1,4 @@
+# src/verticalizer/crawl/parse.py
 from bs4 import BeautifulSoup
 from readability import Document
 

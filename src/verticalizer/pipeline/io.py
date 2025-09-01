@@ -1,3 +1,4 @@
+# src/verticalizer/pipeline/io.py
 from typing import List, Dict, Any
 import orjson
 import json

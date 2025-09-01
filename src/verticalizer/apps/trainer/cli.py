@@ -1,3 +1,4 @@
+# src/verticalizer/apps/trainer/cli.py
 def add_trainer_cli(subparsers):
     p = subparsers.add_parser("train", help="Train a model from labeled CSV")
     p.add_argument("--geo", required=True)

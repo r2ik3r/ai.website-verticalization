@@ -1,3 +1,4 @@
+# src/verticalizer/embeddings/gemini_client.py
 import os
 import hashlib
 import logging

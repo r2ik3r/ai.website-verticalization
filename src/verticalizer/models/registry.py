@@ -1,3 +1,4 @@
+# src/verticalizer/models/registry.py
 import os
 from .persistence import save_model
 from .calibration import ProbCalibrator

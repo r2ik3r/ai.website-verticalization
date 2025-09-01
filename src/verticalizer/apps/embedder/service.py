@@ -1,3 +1,4 @@
+# src/verticalizer/apps/embedder/service.py
 import hashlib
 import logging
 from typing import List

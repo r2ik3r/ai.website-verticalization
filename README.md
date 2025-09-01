@@ -1,111 +1,48 @@
-# 📊 Website Verticalizer
-Production-grade classification system for website content into IAB categories with geo-specific Premiumness Scores
+# 🤖➿⚙ Website Verticalizer
+Production‑grade system to classify websites into IAB categories and generate geo‑specific Premiumness Scores (1–10).
 
-See also:
-- spec.md (Project Specification: scope, requirements, acceptance)
-- CONTRIBUTING.md (Contributor workflow, QA gates)
+See also
+- docs/website_verticalizer_spec.md — for an oveerview of the project.
+- docs/website_verticalizer_deep_dive.md - for deep dive into Website Verticalizer
+- docs/premiumness_scoring_spec.md - for deep dive into Premiumness Scoring
+- CONTRIBUTING.md — contributor workflow and QA gates.
 
----
+***
 
 ## 📌 Overview
+Website Verticalizer is a modular ML pipeline that:
+- Performs multilabel IAB Tier‑1 classification (Tier‑2 optional as label coverage grows).
+- Assigns geo‑specific Premiumness Scores (1–10) per category when labels are available.
+- Operates on labeled or unlabeled inputs via crawl → embed → train → infer → eval stages.
+- Combines crawled content, semantic embeddings, a two‑head Keras model, and per‑label calibration.
 
-Website Verticalizer is a production-ready ML system for:
-- Classifying websites into IAB categories (Tier‑1; optionally Tier‑2).
-- Assigning geo-specific Premiumness Scores (1–10) per category.
-- Operating on labeled datasets, unlabeled datasets (via crawling, embedding, inference), or both in hybrid loops.
-- Combining crawled website content + Gemini embeddings + Keras classifier with calibration.
-- Achieving production-level robustness, modularity, caching, and reproducibility.
+Built for reproducibility, caching, cost controls, and per‑geo artifact versioning.
 
-Inspired by “Kaggle Day 2 — Classifying embeddings with Keras,” extended for multi‑label, multi‑geo, production deployments.
-
----
+***
 
 ## 🚀 Features
+- Multi‑label IAB classification with Keras on semantic embeddings.
+- Pluggable embedder with cache‑first behavior, rate limiting, retries, dry‑run, and max‑calls; Gemini client is implemented; other providers can be added via the same interface.
+- Robots.txt‑aware crawler with readability extraction; Postgres metadata; optional object storage for raw HTML and vectors.
+- Premiumness Score head per vertical, clamped to 1–10 and normalized during training.
+- Per‑label isotonic probability calibration (applied at inference on classification head only).
+- Decoupled CLIs: crawl, embed, train, infer, eval; plus run‑pipeline orchestrator.
+- File‑driven I/O; structured logging; idempotent reruns.
 
-- Multi‑label classification with Keras and semantic embeddings  
-- Gemini API integration with caching, rate limiting, and dry‑run modes  
-- Website crawling with robots.txt compliance  
-- Geo‑specific Premiumness Scores (1–10)  
-- Probability calibration (Isotonic Regression)  
-- Modular pipeline: crawl, embed, train, infer, eval — each runnable independently  
-- File‑driven I/O with Postgres & optional S3  
-- Logging, retries & idempotent reruns for production
+Note: The codebase ships a Gemini embedder; if another provider is desired, add a provider client matching the Gemini interface.
 
----
+***
 
 ## 🏗 Architecture & Workflow
+High‑level flow; see docs/spec.md for the detailed diagrams.
+- Inputs (CSV/Excel: websites, labels) → Crawl (robots‑aware) → Embed (cache, dedup, batch) → Train (two‑head Keras, per‑label isotonic) → Artifacts (model.keras, calib.pkl) → Infer (predict probs+scores; apply calibration) → Output JSONL.
+- Calibration applies to probabilities only; scores are discretized 1..10 at inference.
 
-```mermaid
-flowchart LR
-subgraph Input
-A[CSV: websites, labels]
-end
+Mermaid diagram is in the spec to avoid duplication.
 
-subgraph Apps
-CRAWL[Crawlerapps/crawler]
-EMBED[Embedderapps/embedder]
-TRAIN[Trainerapps/trainer]
-INFER[Inferapps/infer]
-EVAL[Evaluateapps/evaluate]
-end
-
-subgraph Pipeline
-COMMON["prepare_embeddings_for_df()pipeline/common.py"]
-NODES["nodes.py(train, infer, eval)"]
-end
-
-subgraph Storage
-PG[(Postgres)]
-S3[(Object Store)]
-end
-
-subgraph Artifacts
-MODELS[(Model + Calib Registry)]
-PRED[Predictions JSONL]
-REPORT[Eval JSON]
-end
-
-%% Input feeds site lists/labels to apps
-A --> CRAWL
-A --> EMBED
-A --> TRAIN
-A --> INFER
-A --> EVAL
-
-%% Crawler persists content
-CRAWL --> PG
-CRAWL --> S3
-
-%% Embedder reads latest crawls and persists embeddings metadata
-PG --> EMBED
-S3 --> EMBED
-EMBED --> PG
-
-%% Shared prep pulls text/embeddings via storage
-PG --> COMMON
-S3 --> COMMON
-COMMON --> NODES
-
-%% Training uses common prep and writes models
-TRAIN --> NODES
-NODES --> PG
-NODES --> MODELS
-
-%% Inference uses models + common prep and writes predictions
-MODELS --> INFER
-INFER --> NODES
-NODES --> PRED
-
-%% Evaluation reads predictions (or model + gold) and writes report
-PRED --> EVAL
-MODELS --> EVAL
-EVAL --> REPORT
-```
-
----
+***
 
 ## 📂 Project Structure
-
 ```
 repo/
 ├── pyproject.toml
@@ -116,195 +53,101 @@ repo/
 ├── .env.example
 ├── src/
 │   └── verticalizer/
-│      ├── cli.py                     # top-level CLI
-│      ├── apps/
-│      │   ├── crawler/{cli.py, service.py, README.md}
-│      │   ├── embedder/{cli.py, service.py, README.md}
-│      │   ├── trainer/{cli.py, service.py, README.md}
-│      │   ├── infer/{cli.py, service.py, README.md}
-│      │   └── evaluate/{cli.py, service.py, README.md}
-│      ├── crawl/                     # fetch, parse, robots
-│      ├── embeddings/                # gemini client + cache
-│      ├── models/                    # keras, calibration, persistence, registry
-│      ├── pipeline/                  # common helpers, nodes (train/infer/eval), io
-│      ├── storage/                   # postgres + s3 clients and repositories
-│      └── utils/                     # logging, taxonomy, metrics, seed
+│      ├── cli.py
+│      ├── apps/{crawler,embedder,trainer,infer,evaluate}/
+│      ├── crawl/        # fetcher, parse, robots
+│      ├── embeddings/   # provider clients + cache (Gemini implemented)
+│      ├── models/       # Keras, calibration, persistence, registry
+│      ├── pipeline/     # common helpers, nodes, io
+│      ├── storage/      # Postgres & S3 clients and repositories
+│      └── utils/        # logging, taxonomy, metrics, seed
 └── tests/
 ```
 
----
+
+***
 
 ## 📊 Data Contracts
+Pointers only; full contracts live in docs/spec.md.
 
-### Labeled CSV
-| Column               | Type        | Required | Description                                |
-|----------------------|-------------|----------|--------------------------------------------|
-| website              | string      | ✅        | Domain or URL                              |
-| iab_labels           | list/string | ❌        | JSON list or comma‑separated IAB IDs       |
-| premiumness_labels   | JSON        | ❌        | Dict {IAB_ID: 1–10}                        |
-| content_text         | string      | ❌        | Optional pre‑fetched content               |
+- Labeled CSV: website, iablabels (JSON/CSV), premiumnesslabels (IAB→1..10), optional contenttext, optional geo; IDs normalized to uppercase IAB codes.
+- Unlabeled CSV: website with optional contenttext; supports inference or classification‑only training.
+- Predictions JSONL: {website, geo, categories[{id,label,prob,score}], generated_at}; model selection via path or registry.
 
-### Unlabeled CSV
-| Column         | Type   | Required | Description   |
-|----------------|--------|----------|---------------|
-| website        | string | ✅        | Domain or URL |
-| content_text   | string | ❌        | Optional      |
+Example rows and Excel→CSV/JSON converter are documented in the spec and CLI help.
 
-### Predictions JSONL (example)
-```json 
-{
-    "website": "cnn.com",
-    "geo": "US",
-    "categories": [
-        { "id": "IAB12", "label": "News", "prob": 0.98, "score": 10 },
-        { "id": "IAB14", "label": "Society", "prob": 0.76, "score": 8 },
-        { "id": "IAB15", "label": "Science", "prob": 0.65, "score": 7 }
-    ],
-    "generated_at": "2025-08-12T12:00:00Z"
-}
-```
-
----
+***
 
 ## ⚙️ Installation
+Prerequisites: Python 3.10+, Poetry; Postgres recommended; S3/minio optional for blobs.
 
+Setup
 ```
-curl -sSL https://install.python-poetry.org | python3 -
 poetry install
 cp .env.example .env
 ```
+Core env keys (full list in docs/spec.md):
+- GEMINI_API_KEY, GEMINI_EMB_MODEL, GEMINI_EMB_DIM, GEMINI_TASK_TYPE, GEMINI_EMB_DRYRUN, GEMINI_EMB_MAX_CALLS, GEMINI_EMB_RATE_LIMIT.
+- DATABASE_URL (Postgres DSN), S3 credentials, HTTP_USER_AGENT/HTTPTIMEOUT for crawler.
 
-### Core Env Vars
-```
-GEMINI_API_KEY=your_key
-HTTP_USER_AGENT=Mozilla/5.0 (compatible; IABVerticalizer/1.0)
-```
+Provider note: The runtime embedder is Gemini by default; additional providers require adding a client under embeddings/ with the same caching and rate‑limit hooks.
 
-### Optional / Recommended
-```
-DATABASE_URL=postgresql+psycopg2://user:pass@host:5432/dbname
-S3_ENDPOINT=http://localhost:9000
-S3_BUCKET=verticalizer
-S3_ACCESS_KEY=...
-S3_SECRET_KEY=...
-
-GEMINI_EMB_MODEL=models/text-embedding-004
-GEMINI_EMB_DIM=768
-GEMINI_TASK_TYPE=classification
-GEMINI_EMB_DRYRUN=0
-GEMINI_EMB_MAX_CALLS=0
-GEMINI_EMB_RATE_LIMIT=0
-```
-
----
+***
 
 ## 📜 Commands
-
-All commands share the top–level entrypoint:
+Top‑level entrypoint:
 ```
-poetry run verticalizer  [options...]
+poetry run verticalizer [command] [options]
 ```
+- Crawl: robots‑aware fetch and persistence.
+- Embed: embed latest text with cache and cost controls.
+- Train: fit two‑head Keras and save calibrator; records artifacts per geo/version.
+- Infer: prepare embeddings, predict, apply calibrator (probs only), write JSONL.
+- Eval: compare predictions vs gold; emits JSON report.
+- Run pipeline: Excel→CSV/JSON→train→infer→compare orchestration.
 
-### 1) Crawl
-Fetch & parse website content, respecting robots.txt; persist to Postgres/S3.
-```
-poetry run verticalizer crawl \
---in PATH_TO_CSV \
-[--store-html] \
-[--geo GEO_CODE] \
-[--batch-size N] \
-[--max-sites N]
-```
+CLI switches and examples are in the spec to avoid duplication.
 
-### 2) Embed
-Generate/reuse cached embeddings; respects rate limits and cost controls.
-```
-poetry run verticalizer embed \
---in PATH_TO_CSV \
-[--model MODEL_NAME] \
-[--store-to-s3]
-```
+***
 
-### 3) Train
-Train two-head Keras model (labels + premiumness) & calibrate.
-```
-poetry run verticalizer train \
---geo GEO_CODE \
---in PATH_TO_LABELED_CSV \
---version VERSION_TAG \
---out-base MODELS_DIR
-```
+## 📈 Ops & Quality Tips
+- Keep taxonomy JSONs consistent across stages; pin seeds for reproducibility.
+- Maximize embedding cache hits; use QPS and max‑calls to meet budget; DRYRUN for smoke tests.
+- Monitor zero‑vector share, stale embeddings vs lasthash, and crawl errors in logs.
 
-### 4) Infer
-Run inference, preparing embeddings as needed, output JSONL.
-```
-poetry run verticalizer infer \
---geo GEO_CODE \
---in PATH_TO_CSV \
---model PATH_TO_MODEL \
---calib PATH_TO_CALIB \
---out OUTPUT_JSONL \
-[--topk N]
-```
+***
 
-### 5) Eval
-Compare predictions JSONL vs. gold JSON to generate a report.
-```
-poetry run verticalizer eval \
---pred PREDICTIONS_JSONL \
---gold GOLD_LABELS_JSON \
---out OUTPUT_REPORT_JSON
-```
+## 🔒 Compliance
+- robots.txt respected; courtesy delay and configurable UA/timeout.
+- No PII; secrets via env; idempotent reruns with durable storage for audits.
 
-### 6) run‑pipeline (optional)
-Chain all stages: crawl → embed → train → infer → eval.
-```
-poetry run verticalizer run-pipeline \
---geo GEO_CODE \
---in PATH_TO_LABELED_CSV \
---version VERSION_TAG \
---out-base MODELS_DIR
-```
+***
 
----
-
-## 📈 Performance Tips
-
-- Balance labeled data per geo for higher macro‑F1.
-- Enable embedding cache to reduce Gemini API cost/time.
-- Use rate limits and max-calls env vars for budget control.
-- Prefer batch embedding for efficiency and cache locality.
-
----
-
-## 🔒 Security & Compliance
-
-- robots.txt respected by crawler.
-- No PII stored.
-- API keys in `.env` only.
-- Optional domain allowlist for crawl compliance.
-
----
-
-## 🧪 Testing & Quality
-
+## 🧪 Testing
 ```
 poetry run pytest
+```
+Linting and style:
+```
 poetry run ruff check src --fix
 ```
+For PR process and QA gates, see CONTRIBUTING.md.
 
-For contributor workflow, Makefile targets, and PR process, see CONTRIBUTING.md.
-
----
+***
 
 ## 📚 Specification
+For scope, requirements, persistence contracts, acceptance gates, diagrams, and roadmap, see docs/spec.md.
 
-For scope, requirements, acceptance criteria, risks, persistence contracts, and roadmap, see spec.md.
+***
 
----
+## 🧭 Troubleshooting
+- Gemini key or permission errors: set GEMINI_API_KEY; disable GEMINI_EMB_DRYRUN for real vectors.
+- Robots denial: provide contenttext in CSV to bypass crawl; then run embed/infer.
+- Empty vectors during dry‑run/max‑calls: expected zero‑vectors; lower restrictions for production runs.
+
+***
 
 ## 🏷 License
+Proprietary — internal use only.
 
-Proprietary – Internal use only
-
----
+***

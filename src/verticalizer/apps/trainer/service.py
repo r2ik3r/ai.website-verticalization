@@ -1,3 +1,4 @@
+# src/verticalizer/apps/trainer/service.py
 import pandas as pd
 from typing import Dict, Any
 from ...pipeline.nodes import train_from_labeled

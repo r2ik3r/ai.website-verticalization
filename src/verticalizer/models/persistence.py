@@ -1,3 +1,4 @@
+# src/verticalizer/models/persistence.py
 import tensorflow as tf
 
 def save_model(model: tf.keras.Model, path: str):

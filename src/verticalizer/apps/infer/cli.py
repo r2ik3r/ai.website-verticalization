@@ -1,3 +1,4 @@
+# src/verticalizer/apps/infer/cli.py
 def add_infer_cli(subparsers):
     p = subparsers.add_parser("infer", help="Run inference on CSV of websites")
     p.add_argument("--in", dest="in_path", required=True)

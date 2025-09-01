@@ -1,3 +1,4 @@
+# src/verticalizer/storage/db.py
 import os
 import logging
 from contextlib import contextmanager

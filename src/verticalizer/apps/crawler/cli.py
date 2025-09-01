@@ -1,3 +1,4 @@
+# src/verticalizer/apps/crawler/cli.py
 def add_crawler_cli(subparsers):
     p = subparsers.add_parser("crawl", help="Crawl websites and persist content")
     p.add_argument("--in", dest="in_path", required=False, help="CSV with 'website' column")

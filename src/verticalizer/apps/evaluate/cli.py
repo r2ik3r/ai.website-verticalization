@@ -1,3 +1,4 @@
+# src/verticalizer/apps/evaluate/cli.py
 def add_evaluate_cli(subparsers):
     p = subparsers.add_parser("eval", help="Compare predictions vs ground truth")
     p.add_argument("--pred", required=True)
