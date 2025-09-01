@@ -13,12 +13,12 @@ Cache‑first, idempotent stages minimize duplicate work; embeddings are reused 
 
 ```mermaid
 flowchart LR
-  A[websites.csv] --> B[Crawl (robots-aware readability)]
-  B --> C[Embed (cache + dedup)]
-  C --> D[Train (multilabel + calib)]
-  D --> E[Persist (artifacts: .keras + calib.pkl)]
-  E --> F[Infer top-k (calibrated JSONL)]
-  F --> G[Eval (F1, top-k comparator)]
+  A[websites.csv] --> B["Crawl (robots-aware readability)"]
+  B --> C["Embed (cache + dedup)"]
+  C --> D["Train (multilabel + calib)"]
+  D --> E["Persist (artifacts: .keras + calib.pkl)"]
+  E --> F["Infer top-k (calibrated JSONL)"]
+  F --> G["Eval (F1, top-k comparator)"]
 
   subgraph Optional Infra
     S3[(S3/MinIO)]:::store
