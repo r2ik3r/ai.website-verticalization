@@ -9,16 +9,16 @@ The flow emphasizes cache‑first, idempotent stages and optional infra for blob
 Insert this Mermaid diagram as the hero visualization on the page.
 ```mermaid
 flowchart LR
-  A[websites.csv] --> B[Crawl<br/>robots-aware + readability]
-  B --> C[Embed<br/>Gemini + cache/dedup]
-  C --> D[Train<br/>Keras multilabel + calib]
-  D --> E[Persist artifacts<br/>model.keras + calib.pkl]
-  E --> F[Infer<br/>top-k JSONL \(calibrated\)]
-  F --> G[Eval<br/>macro-F1, top-k comparator]
+  A[websites.csv] --> B[🕸️ Crawl\nrobots-aware + readability]
+  B --> C[🔷 Embed\nGemini + cache/dedup]
+  C --> D[🧠 Train\nKeras multilabel + calib]
+  D --> E[✍️ Persist artifacts\nmodel.keras + calib.pkl]
+  E --> F["✨ Infer\ntop-k JSONL (calibrated)"]
+  F --> G[📏 Eval\nmacro-F1, top-k comparator]
 
-  subgraph Optional_Infra
-    S3[(S3/MinIO<br/>raw HTML, vectors, models)]
-    PG[(Postgres<br/>sites, crawls, embeddings,<br/>models, predictions, evalreports)]
+  subgraph Optional Infra
+    S3[(S3/MinIO\nraw HTML, vectors, models)]
+    PG[(Postgres\nsites, crawls, embeddings,\nmodels, predictions, evalreports)]
   end
 
   B -- raw HTML --> S3
