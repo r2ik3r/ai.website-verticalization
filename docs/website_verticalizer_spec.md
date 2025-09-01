@@ -1,5 +1,4 @@
 # Website Verticalizer — Overview & Quickstart
-Shielded network of sites icon — Primary CTAs: Verticalizer Spec -  Premiumness Spec -  Deep Dive Architecture
 
 ## Summary
 The project classifies websites into IAB Tier‑1 categories and generates per‑vertical, per‑geo Premiumness Scores (1–10) by combining robots‑aware crawling, semantic embeddings, a two‑head Keras network, and per‑label isotonic calibration, delivered as modular batch pipelines with cache‑first cost controls and durable persistence.
