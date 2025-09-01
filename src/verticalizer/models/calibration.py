@@ -5,19 +5,23 @@ import joblib
 
 class ProbCalibrator:
     def __init__(self):
-        self.cals = {}
+        self.cals = {}   # idx -> IsotonicRegression
 
-    def fit(self, raw_probs: np.ndarray, y_true: np.ndarray):
-        L = raw_probs.shape[1]
+    def fit(self, rawprobs: np.ndarray, ytrue: np.ndarray):
+        L = rawprobs.shape[2]
         for i in range(L):
             cal = IsotonicRegression(out_of_bounds="clip")
-            cal.fit(raw_probs[:, i], y_true[:, i])
+            cal.fit(rawprobs[:, i], ytrue[:, i])
             self.cals[i] = cal
 
-    def transform(self, raw_probs: np.ndarray) -> np.ndarray:
-        out = np.zeros_like(raw_probs)
-        for i, cal in self.cals.items():
-            out[:, i] = cal.transform(raw_probs[:, i])
+    def transform(self, rawprobs: np.ndarray) -> np.ndarray:
+        out = np.zeros_like(rawprobs)
+        L = rawprobs.shape[2]
+        for i in range(L):
+            if i in self.cals:
+                out[:, i] = self.cals[i].transform(rawprobs[:, i])
+            else:
+                out[:, i] = rawprobs[:, i]
         return out
 
     def save(self, path: str):

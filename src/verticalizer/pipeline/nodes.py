@@ -2,178 +2,136 @@
 
 import json
 import logging
-from typing import Dict, Any, List
-
+from typing import Dict, Any, List, Tuple
 import numpy as np
 import pandas as pd
 
-from .common import prepare_embeddings_for_df
+from .common import prepareembeddingsfordf
 from ..models.calibration import ProbCalibrator
-from ..models.keras_multilabel import build_model
-from ..utils.metrics import multilabel_metrics, topk_accuracy
-from ..utils.taxonomy import load_taxonomy
+from ..models.kerasmultilabel import build_model
+from ..utils.metrics import multilabelmetrics, topkaccuracy
+from ..utils.taxonomy_versioned import load_taxonomy
 
 logger = logging.getLogger(__name__)
 
+def _parse_iab_list(raw):
+    if isinstance(raw, list):
+        labs = [str(x).strip() for x in raw]
+    elif isinstance(raw, str) and raw.strip():
+        try:
+            v = json.loads(raw)
+            if isinstance(v, list):
+                labs = [str(x).strip() for x in v]
+            else:
+                labs = [x.strip() for x in raw.split(",") if x.strip()]
+        except Exception:
+            labs = [x.strip() for x in raw.split(",") if x.strip()]
+    else:
+        labs = []
+    return [x for x in labs if x.upper().startswith("IAB")]
 
-def _prepare_targets(df: pd.DataFrame, classes: List[str]) -> Dict[str, np.ndarray]:
-    """Build float32 matrices for classification labels and vertical scores."""
+def _prepare_targets(df: pd.DataFrame, classes: List[str]) -> Tuple[np.ndarray, np.ndarray]:
     idx = {c: i for i, c in enumerate(classes)}
     n, L = len(df), len(classes)
-    y_labels = np.zeros((n, L), dtype=np.float32)
-    y_scores = np.zeros((n, L), dtype=np.float32)
-
+    ylabels = np.zeros((n, L), dtype=np.float32)
+    yscores = np.zeros((n, L), dtype=np.float32)
     for r, row in df.iterrows():
-        # Classification labels
-        labs = []
-        raw_labs = row.get("iab_labels")
-        if isinstance(raw_labs, str) and raw_labs.strip():
-            try:
-                labs = json.loads(raw_labs)
-                if isinstance(labs, str):
-                    labs = [labs]
-            except Exception:
-                labs = [x.strip() for x in raw_labs.split(",") if x.strip()]
-        elif isinstance(raw_labs, list):
-            labs = raw_labs
-        # Only keep valid IAB IDs
-        labs = [label for label in labs if isinstance(label, str) and label.upper().startswith("IAB")]
+        labs = _parse_iab_list(row.get("iablabels"))
         for lab in labs:
             if lab in idx:
-                y_labels[r, idx[lab]] = 1.0
-
-        # Scores (premium scores)
-        score_map = {}
-        raw_scores = row.get("premiumness_labels")
-        if isinstance(raw_scores, str) and raw_scores.strip():
+                ylabels[r, idx[lab]] = 1.0
+        # Optional premiumness map by IAB
+        rawscores = row.get("premiumnesslabels")
+        scoremap = None
+        if isinstance(rawscores, str) and rawscores.strip():
             try:
-                score_map = json.loads(raw_scores)
+                scoremap = json.loads(rawscores)
             except Exception:
-                score_map = {}
-        elif isinstance(raw_scores, dict):
-            score_map = raw_scores
+                scoremap = None
+        elif isinstance(rawscores, dict):
+            scoremap = rawscores
+        if scoremap:
+            for lab, s in scoremap.items():
+                if lab in idx:
+                    try:
+                        sval = float(s)
+                    except Exception:
+                        sval = 0.0
+                    yscores[r, idx[lab]] = max(1.0, min(10.0, sval)) / 10.0
+    return ylabels, yscores
 
-        for lab, s in score_map.items():
-            if lab in idx:
-                try:
-                    sval = float(s)
-                except Exception:
-                    sval = 0.0
-                # clamp 1..10 then normalize to 0..1
-                sval = max(1.0, min(10.0, sval))
-                y_scores[r, idx[lab]] = sval / 10.0
-
-    return {
-        "labels": y_labels.astype(np.float32),
-        "scores": y_scores.astype(np.float32)
-    }
-
-
-def train_from_labeled(df: pd.DataFrame) -> Dict[str, Any]:
-    """
-    Full training routine:
-    1. Prepare embeddings via shared helper (crawl + embed + load from DB/cache)
-    2. Train two-head model (labels + premiumness scores)
-    3. Calibrate (if enough data)
-    """
-    logger.info(f"[TRAIN] Starting with {len(df)} samples")
-
-    # Step 1-3: prepare embeddings using shared helper
-    X = prepare_embeddings_for_df(df)
-
-    # Step 4: Build label/score matrices
-    id2label, _ = load_taxonomy()
+def train_from_labeled(df: pd.DataFrame, cfg: Dict[str, Any] = None) -> Dict[str, Any]:
+    cfg = cfg or {}
+    id2label, _, _, _ = load_taxonomy(cfg.get("iab_version", "v3"))
     classes = list(id2label.keys())
-    targets = _prepare_targets(df, classes)
-    y_labels, y_scores = targets["labels"], targets["scores"]
+    X = prepareembeddingsfordf(df)
+    ylabels, yscores = _prepare_targets(df, classes)
 
-    # Step 5: Create & fit model
     model = build_model(
-        emb_dim=X.shape[1],
-        num_labels=len(classes),
-        hidden=512,
-        dropout=0.3
+        embdim=int(X.shape[2]),
+        numlabels=len(classes),
+        hidden=int(cfg.get("hidden", 512)),
+        dropout=float(cfg.get("dropout", 0.3)),
+        labels_loss=str(cfg.get("labels_loss", "bce")),
+        gamma=float(cfg.get("gamma", 2.0)),
     )
-    logger.info("[TRAIN] Starting keras fit")
+    callbacks = []
+    if bool(cfg.get("early_stop", True)):
+        callbacks.append(
+            __import__("tensorflow").keras.callbacks.EarlyStopping(
+                monitor="val_labels_auc", mode="max", patience=int(cfg.get("patience", 3)), restore_best_weights=True
+            )
+        )
+    logger.info("TRAIN starting fit")
     model.fit(
         X,
-        {"labels": y_labels, "scores": y_scores},
-        validation_split=0.2,
-        epochs=12,
-        batch_size=32,
-        verbose=2
+        {"labels": ylabels, "scores": yscores},
+        validation_split=float(cfg.get("val_split", 0.2)),
+        epochs=int(cfg.get("epochs", 15)),
+        batch_size=int(cfg.get("batch_size", 64)),
+        verbose=2,
+        callbacks=callbacks,
     )
+    calibrator = ProbCalibrator()
+    rawprobs = model.predict(X, verbose=0)
+    if isinstance(rawprobs, (list, tuple)):
+        rawprobs = rawprobs
+    poscounts = ylabels.sum(axis=0)
+    mask = poscounts >= 5.0
+    if mask.any():
+        calibrator.fit(rawprobs[:, mask], ylabels[:, mask])  # fit only where sufficient positives
 
-    # Step 6: Calibrate
-    cal = ProbCalibrator()
-    if np.sum(y_labels) > 5:  # only if enough positive labels
-        pred_out = model.predict(X, verbose=0)
-        if isinstance(pred_out, (list, tuple)):
-            pred_labels = pred_out[0]
-        else:
-            pred_labels = pred_out
-        cal.fit(pred_labels, y_labels)
+    metrics = evaluate(model, calibrator, classes, df)
+    return {"model": model, "cal": calibrator, "classes": classes, "metrics": metrics}
 
-    return {"model": model, "cal": cal, "classes": classes}
-
-
-def infer(model, cal: ProbCalibrator, classes: List[str], df: pd.DataFrame, topk: int = 3):
-    """Run inference and return top‑k predictions per site."""
-    logger.info(f"[INFER] On {len(df)} samples, topk={topk}")
-    id2label, _ = load_taxonomy()
-
-    X = prepare_embeddings_for_df(df)
-    raw_probs, scores = model.predict(X, verbose=0)
-
-    # if calibration is available, calibrate classification head
-    if isinstance(raw_probs, (list, tuple)):
-        raw_probs = raw_probs[0]
-    probs = cal.transform(raw_probs) if getattr(cal, "cals", None) else raw_probs
-
-    scores_int = np.clip((scores * 10).round().astype(int), 1, 10)
-
+def infer(model, cal: ProbCalibrator, classes: List[str], df: pd.DataFrame, topk: int = 10) -> List[Dict[str, Any]]:
+    X = prepareembeddingsfordf(df)
+    raw = model.predict(X, verbose=0)
+    if isinstance(raw, (list, tuple)):
+        raw = raw
+    probs = cal.transform(raw) if getattr(cal, "cals", None) else raw
+    id2label, _, _, _ = load_taxonomy()
     out = []
-    for i, row in df.iterrows():
-        order = np.argsort(-probs[i])[:topk]
-        cats = [{
-            "id": classes[j],
-            "label": id2label.get(classes[j], classes[j]),
-            "prob": float(probs[i, j]),
-            "score": int(scores_int[i, j])
-        } for j in order]
-        out.append({"website": row["website"], "categories": cats})
+    for i, row in enumerate(df.itertuples(index=False)):
+        order = np.argsort(-probs[i])[:max(1, topk)]
+        cats = [{"id": classes[j], "label": id2label.get(classes[j], classes[j]), "prob": float(probs[i, j])} for j in order]
+        out.append({"website": str(getattr(row, "website")).strip().lower(), "categories": cats})
     return out
 
-
-def evaluate(model, cal: ProbCalibrator, classes: List[str], df: pd.DataFrame) -> Dict[str, Any]:
-    """Evaluate classification performance."""
-    X = prepare_embeddings_for_df(df)
-
+def evaluate(model, calibrator: ProbCalibrator, classes: List[str], df: pd.DataFrame) -> Dict[str, Any]:
+    # Build Y from df
     idx = {c: i for i, c in enumerate(classes)}
     Y = np.zeros((len(df), len(classes)), dtype=np.float32)
-    for i, row in df.iterrows():
-        labs = []
-        raw = row.get("iab_labels")
-        if isinstance(raw, str) and raw.strip():
-            try:
-                labs = json.loads(raw)
-                if isinstance(labs, str):
-                    labs = [labs]
-            except Exception:
-                labs = [x.strip() for x in raw.split(",") if x.strip()]
-        elif isinstance(raw, list):
-            labs = raw
-        labs = [label for label in labs if isinstance(label, str) and label.upper().startswith("IAB")]
-        for lab in labs:
+    for i, row in enumerate(df.itertuples(index=False)):
+        for lab in _parse_iab_list(getattr(row, "iablabels")):
             if lab in idx:
                 Y[i, idx[lab]] = 1.0
-
-    raw_probs, _ = model.predict(X, verbose=0)
-    if isinstance(raw_probs, (list, tuple)):
-        raw_probs = raw_probs[0]
-    probs = cal.transform(raw_probs) if getattr(cal, "cals", None) else raw_probs
-
-    m = multilabel_metrics(Y, probs, threshold=0.5)
-    m["top1_acc"] = topk_accuracy(Y, probs, k=1)
-    m["top3_acc"] = topk_accuracy(Y, probs, k=3)
+    X = prepareembeddingsfordf(df)
+    raw = model.predict(X, verbose=0)
+    if isinstance(raw, (list, tuple)):
+        raw = raw
+    probs = calibrator.transform(raw) if getattr(calibrator, "cals", None) else raw
+    m = multilabelmetrics(Y, probs, threshold=0.5)
+    m["top1"] = topkaccuracy(Y, probs, k=1)
+    m["top3"] = topkaccuracy(Y, probs, k=3)
     return m

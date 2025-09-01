@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "iab-verticalizer"
 version = "0.1.0"
-description = "IAB vertical classification with crawling, embeddings, self-training"
+description = "IAB vertical classification with crawling, embeddings, calibrated multilabel model"
 authors = ["Company Internal"]
 readme = "README.md"
 packages = [{ include = "verticalizer", from = "src" }]
@@ -10,18 +10,12 @@ packages = [{ include = "verticalizer", from = "src" }]
 python = ">=3.10,<3.12"
 requests = "^2.32.3"
 beautifulsoup4 = "^4.12.3"
-tldextract = "^5.1.2"
 readability-lxml = "^0.8.1"
 lxml = "^5.2.2"
 numpy = "^1.26.4"
 pandas = "^2.2.2"
 scikit-learn = "^1.5.1"
 tensorflow = "^2.16.1"
-pyyaml = "^6.0.2"
-tenacity = "^8.5.0"
-langgraph = "^0.2.24"
-langchain = "^0.2.14"
-uvloop = { version = "^0.19.0", markers = "sys_platform != 'win32'" }
 orjson = "^3.10.7"
 python-dotenv = "^1.0.1"
 openpyxl = "^3.1.5"
@@ -29,18 +23,39 @@ google-genai = "^1.29.0"
 google-api-core = "^2.25.1"
 google-auth = "^2.40.3"
 tqdm = "^4.67.1"
-sqlalchemy = "^2.0.43"
+SQLAlchemy = "^2.0.43"
 psycopg2-binary = "^2.9.10"
 boto3 = "^1.40.8"
+readability = {version = "^0.3.1", optional = true}
+# Optional sentence-transformers support (for ensembling/offline)
+sentence-transformers = { version = "^3.0.1", optional = true }
+
+[tool.poetry.extras]
+st = ["sentence-transformers"]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
-black = "^24.8.0"
 ruff = "^0.5.7"
 mypy = "^1.11.1"
+coverage = "^7.6.1"
+pre-commit = "^3.8.0"
+types-requests = "^2.32.0.20240712"
+pandas-stubs = "^2.2.2.240807"
 
 [tool.poetry.scripts]
 verticalizer = "verticalizer.cli:app"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-select = ["I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+warn_unused_configs = true
+ignore_missing_imports = true
+plugins = []
 
 [build-system]
 requires = ["poetry-core>=1.8.2"]

@@ -3,7 +3,6 @@ import logging
 import numpy as np
 import pandas as pd
 from typing import List
-
 from ..apps.crawler.service import crawl_sites
 from ..apps.embedder.service import embed_sites
 from ..storage.repositories import latest_text_for_site_batch
@@ -12,37 +11,28 @@ from ..embeddings.gemini_client import GeminiEmbedder
 
 logger = logging.getLogger(__name__)
 
-def prepare_embeddings_for_df(
-        df: pd.DataFrame,
-        model_name: str = "models/text-embedding-004",
-        store_to_s3: bool = False
-) -> np.ndarray:
-    """
-    Ensure crawls + embeddings exist for the given DataFrame and return embedding matrix X.
+def prepare_embeddings_for_df(df: pd.DataFrame, modelname: str = "models/text-embedding-004", store_to_s3: bool = False) -> np.ndarray:
+    # Ensure crawl and embeddings exist
+    sites: List[str] = (
+        df["website"].dropna().astype(str).str.strip().tolist()
+        if "website" in df.columns else []
+    )
+    sites = [s for s in sites if s]
 
-    Steps:
-    1. Crawl sites (if needed) and persist to DB/Object Storage
-    2. Embed crawled text using GeminiEmbedder (with caching)
-    3. Load embeddings from cache/DB into a NumPy float32 array
-    """
-    sites: List[str] = df["website"].dropna().astype(str).str.strip().tolist()
+    if not sites:
+        return np.zeros((0, 768), dtype=np.float32)
 
-    # Crawl
-    logger.info(f"[COMMON] Crawling {len(sites)} sites")
+    logger.info("COMMON: Crawling %d sites", len(sites))
     crawl_sites(sites)
 
-    # Embed
-    logger.info(f"[COMMON] Embedding {len(sites)} sites using model '{model_name}'")
-    embed_sites(sites, model_name=model_name, store_to_s3=store_to_s3)
+    embed_sites(sites, modelname=modelname, store_to_s3=store_to_s3)
 
-    # Load from DB/cache
     texts_map = latest_text_for_site_batch(sites)
-    embedder = GeminiEmbedder(model=model_name)
-
+    embedder = GeminiEmbedder(model=modelname)
     vectors = []
     for site in sites:
         text = texts_map.get(site) or ""
-        vec = get_cached(text.strip(), embedder.model) or [0.0] * embedder.embed_dim
+        vec = get_cached(text.strip(), embedder.model) or embedder.embed_text(text)
         vectors.append(vec)
 
     X = np.array(vectors, dtype=np.float32)

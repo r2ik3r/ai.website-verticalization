@@ -2,13 +2,16 @@
 import hashlib
 import os
 import orjson
+import tempfile
+import shutil
 
-CACHE_DIR = os.environ.get("EMB_CACHE_DIR", ".emb_cache")
+CACHE_DIR = os.environ.get("EMB_CACHE_DIR", ".embcache")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 def _key(text: str, model: str) -> str:
-    h = hashlib.sha256((model + "||" + text).encode("utf-8")).hexdigest()
-    return os.path.join(CACHE_DIR, h + ".json")
+    s = (model or "") + "\n" + (text or "")
+    h = hashlib.sha256(s.encode("utf-8")).hexdigest()
+    return os.path.join(CACHE_DIR, f"{h}.json")
 
 def get_cached(text: str, model: str):
     path = _key(text, model)
@@ -19,5 +22,11 @@ def get_cached(text: str, model: str):
 
 def set_cached(text: str, model: str, vec):
     path = _key(text, model)
-    with open(path, "wb") as f:
-        f.write(orjson.dumps(vec))
+    td = tempfile.mkdtemp(prefix="embcache-")
+    try:
+        tmp = os.path.join(td, "vec.json")
+        with open(tmp, "wb") as f:
+            f.write(orjson.dumps(vec))
+        shutil.move(tmp, path)
+    finally:
+        shutil.rmtree(td, ignore_errors=True)

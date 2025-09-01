@@ -18,7 +18,7 @@ def write_jsonl(path: str, rows: List[Dict[str, Any]]):
             f.write(orjson.dumps(r))
             f.write(b"\n")
 
-def now_iso():
+def now_iso() -> str:
     return datetime.utcnow().isoformat() + "Z"
 
 def read_jsonl(path: str):
@@ -28,5 +28,8 @@ def read_jsonl(path: str):
             line = line.strip()
             if not line:
                 continue
-    out.append(json.loads(line))
+            try:
+                out.append(json.loads(line))
+            except Exception:
+                continue
     return out

@@ -1,44 +1,41 @@
-# src/verticalizer/models/keras_multilabel.py
+# src/verticalizer/models/kerasmultilabel.py (replace file)
+
 from tensorflow import keras
 from tensorflow.keras import layers
+import tensorflow as tf
 
-def build_model(emb_dim: int, num_labels: int, hidden: int = 512, dropout: float = 0.3):
-    """
-    Build a multi-label classification + per-vertical score regression model.
-    - labels head: sigmoid(num_labels), trained with BCE
-    - scores head: sigmoid(num_labels), trained with MSE, mapped to 1..10
-    """
-    inp = keras.Input(shape=(emb_dim,), name="emb")
+def _focal_bce(gamma: float = 2.0):
+    bce = tf.keras.losses.BinaryCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
+    def loss(y_true, y_pred):
+        b = bce(y_true, y_pred)
+        p_t = y_true * y_pred + (1.0 - y_true) * (1.0 - y_pred)
+        w = tf.pow(1.0 - p_t, gamma)
+        return tf.reduce_mean(w * b)
+    return loss
+
+def build_model(embdim: int, numlabels: int, hidden: int = 512, dropout: float = 0.3, labels_loss: str = "bce", gamma: float = 2.0):
+    inp = keras.Input(shape=(embdim,), name="emb")
     x = layers.Dense(hidden, activation="relu")(inp)
     x = layers.BatchNormalization()(x)
     x = layers.Dropout(dropout)(x)
-    x = layers.Dense(hidden // 2, activation="relu")(x)
+    x = layers.Dense(hidden * 2, activation="relu")(x)
     x = layers.Dropout(dropout)(x)
-
-    y_labels = layers.Dense(num_labels, activation="sigmoid", name="labels")(x)
-    y_scores = layers.Dense(num_labels, activation="sigmoid", name="scores")(x)
-
-    model = keras.Model(inp, [y_labels, y_scores])
+    ylabels = layers.Dense(numlabels, activation="sigmoid", name="labels")(x)
+    yscores = layers.Dense(numlabels, activation="sigmoid", name="scores")(x)
+    model = keras.Model(inp, [ylabels, yscores])
+    if labels_loss == "focal":
+        loss_labels = _focal_bce(gamma=gamma)
+    else:
+        loss_labels = keras.losses.BinaryCrossentropy()
     model.compile(
         optimizer=keras.optimizers.Adam(1e-3),
-        loss={
-            "labels": keras.losses.BinaryCrossentropy(),
-            "scores": keras.losses.MeanSquaredError()
-        },
-        # Prioritise classification so model learns to separate categories before fine-tuning scores
+        loss={"labels": loss_labels, "scores": keras.losses.MeanSquaredError()},
         loss_weights={"labels": 1.0, "scores": 0.3},
-        metrics={
-            "labels": [
-                keras.metrics.AUC(name="auc"),
-                keras.metrics.Precision(name="precision"),
-                keras.metrics.Recall(name="recall")
-            ]
-        }
+        metrics={"labels": [keras.metrics.AUC(name="auc"), keras.metrics.Precision(name="precision"), keras.metrics.Recall(name="recall")]},
     )
     return model
 
-
-def to_bin_vector(scores_int, bins: int = 10):
+def to_bin_vector(scores_int: int, bins: int = 10):
     import numpy as np
     y = np.zeros((len(scores_int), bins), dtype="float32")
     for i, s in enumerate(scores_int):

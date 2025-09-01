@@ -1,109 +1,124 @@
 # Contributing to Website Verticalizer
 
-Thank you for your interest in contributing!
-We welcome bug reports, fixes, features, documentation, and tests.
-
-To avoid duplication, the authoritative user/ops documentation (architecture, environment, CLI usage) lives in README.md, and the full scope/requirements live in spec.md. This guide focuses on contributor workflow and quality gates.
+Thank you for the interest in contributing. Bug reports, fixes, features, docs, and tests are welcome. This guide focuses on contributor workflow and quality gates. Authoritative user/ops docs live in README.md; detailed scope lives in spec.md.
 
 - Project overview, architecture, environment, commands: see README.md
 - Full project requirements and acceptance criteria: see spec.md
 
----
+***
 
-## Development Setup
+## Development setup
 
 Prerequisites
-- Python 3.11+
+- Python 3.10–3.11
 - Poetry
 - Git
 
 Setup
 ```
-git clone
-cd
+git clone <repo-url>
+cd <repo-dir>
 poetry install
-cp .env.example .env   # set GEMINI_API_KEY, DATABASE_URL, S3_*, GEMINI_EMB_*
-# optional:
-poetry shell
+# choose an environment template:
+cp .env.dev.template .env        # cost-efficient, real embeddings
+# or
+cp .env.prod.template .env       # accuracy-first production
+# then set required secrets: GEMINI_API_KEY, optional S3_*, DB_DSN
 ```
-
 Run the CLI
 ```
-poetry run verticalizer  --help
+poetry run verticalizer --help
 ```
+For day-to-day commands, prefer the Makefile targets described below and in README.md.
 
-For detailed commands and examples, see the “📜 Commands” section in README.md.
+***
 
----
+## Makefile tasks
 
-## Makefile Tasks
-
-Common tasks (executed via Poetry):
-
+Common tasks executed via Poetry:
 - make install — install dependencies
 - make fmt — format code (ruff format)
 - make lint — lint code (ruff check)
 - make test — run tests (pytest)
-- make cov — coverage
+- make typecheck — mypy type checking
 - make clean — remove caches and build artifacts
-- make qa — fmt + lint + test
 
----
+Canonical run targets (wrap the CLIs):
+- make run-ingest — create labeled CSV from Kaggle IAB input
+- make run-train — train model and save artifacts (model.keras, calib.pkl)
+- make run-crawl — optional: crawl URLs for inference
+- make run-infer — predict (single model) to JSONL
+- make run-infer-ensemble — predict with ensemble + site aggregation
+- make run-all — end-to-end ingest → train → crawl → infer
+
+Refer to README.md for outputs and variable knobs (GEO, VERSION, IAB_VERSION, paths).
+
+***
 
 ## Workflow
 
-1) Create an issue (bug/feature) or pick one from the tracker.  
-2) Branch:
-   - feature/
-   - fix/
-   - docs/
-3) Implement your change; keep PRs small and focused.  
-4) Run the quality gate locally:
+1) Create an issue (bug/feature) or pick one from the tracker.
+2) Branch naming:
+   - feature/<slug>
+   - fix/<slug>
+   - docs/<slug>
+3) Implement the change; keep PRs small and focused.
+4) Run the local quality gate:
 ```
-make qa
+make fmt && make lint && make test && make typecheck
 ```
-5) Open a PR (describe changes, link issues, attach logs/screenshots if CLI UX changed).  
-6) Address review feedback until approval and merge.
+5) Open a PR: explain changes, link issues, and include logs/screenshots if CLI UX changed.
+6) Address review feedback until approval, then merge.
 
----
+***
 
-## Style & Testing
+## Style & testing
 
 - Formatter: Ruff (ruff format)
 - Linter: Ruff (ruff check)
-- Tests: pytest under ./tests (or adjust Makefile)
+- Types: mypy (strictness settings in pyproject.toml)
+- Tests: pytest under ./tests
 
-Commands
+Quick commands
 ```
 make fmt
 make lint
 make test
-make cov
+make typecheck
 ```
+Keep PRs lint-clean. If adding rules, edit pyproject.toml accordingly.
 
-Keep PRs lint-clean. If adding new rules, update pyproject.toml.
+***
 
----
+## Environment & secrets
 
-## Environment & Secrets
+- See README.md → Installation for environment variables and templates (env.dev.template, env.prod.template).
+- Never commit secrets. .env is gitignored. Use distinct secrets for dev and prod.
 
-- See README.md → Installation for environment variables.
-- Never commit secrets. `.env` is gitignored.
+***
 
----
+## Backwards compatibility
 
-## Backwards Compatibility
+If changing CLI flags or I/O formats, update:
+- README.md
+- Any module-level docs under src/verticalizer/apps/*/ if present
+Document any breaking changes clearly in the PR and changelog.
 
-- If you change CLI flags or I/O formats, update:
-  - README.md
-  - Module-level READMEs under src/verticalizer/apps/*/
-- Document any breaking changes clearly in the PR and changelog.
+***
 
----
+## Code areas of interest
+
+- apps/: CLI layers and orchestration per stage (crawl, embed, train, infer, evaluate)
+- embeddings/: embedding clients and cache
+- models/: Keras heads, calibration, persistence/registry
+- pipeline/: training/inference nodes and utilities
+- storage/: Postgres and S3/MinIO repositories/clients
+- utils/: taxonomy, metrics, logging, seed
+
+***
 
 ## Recognition
 
-We appreciate all contributions — fixes, features, docs, and tests.
-Thanks for helping improve IAB Verticalizer!
+All contributions are appreciated — fixes, features, docs, and tests. Thanks for helping improve Website Verticalizer.
 
----
+***

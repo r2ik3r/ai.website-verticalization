@@ -9,7 +9,8 @@ DEFAULT_UA = os.environ.get("HTTP_USER_AGENT", "IABVerticalizerBot/1.0")
 TIMEOUT = int(os.environ.get("HTTP_TIMEOUT", "20"))
 
 def robots_allowed(url: str, user_agent: str = DEFAULT_UA) -> bool:
-    parsed = urlparse(url if url.startswith("http") else f"https://{url}")
+    url = url if url.startswith("http") else f"https://{url}"
+    parsed = urlparse(url)
     base = f"{parsed.scheme}://{parsed.netloc}"
     rp = robotparser.RobotFileParser()
     try:
